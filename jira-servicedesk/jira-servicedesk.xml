@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL></TemplateURL>
+  <Beta>False</Beta>
+  <Category>Productivity: Tools:</Category>
+  <Date>2020-07-06</Date>
+  <Name>Jira Service Desk</Name>
+  <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    Jira Service Desk is a fully featured service desk tool used by modern IT teams.
+  </Description>
+  <Changes>
+    [font size=5]Recent Changes[/font]
+    [font size=4]2020.07.06[/font]
+    - Initial Release
+  </Changes>
+  <Overview>
+    Jira Service Desk is a fully featured service desk tool used by modern IT teams.
+  </Overview>
+  <Support>https://forums.unraid.net/topic/94096-support-ibracorp-all-images-and-files/</Support>
+  <Registry>https://hub.docker.com/r/atlassian/jira-servicedesk/</Registry>
+  <GitHub>https://github.com/ibracorp/jira-servicedesk</GitHub>
+  <Repository>atlassian/jira-servicedesk</Repository>
+  <Project>https://www.atlassian.com/software/jira/service-desk</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/jira-servicedesk</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Icon>https://i.imgur.com/kUb6QPd.png</Icon>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://www.paypal.me/ramteksolutions</DonateLink>
+  <DonateImg>https://i.imgur.com/VHSkew7.png</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
