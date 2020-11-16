@@ -1,38 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container version="2">
   <TemplateURL></TemplateURL>
   <Beta>False</Beta>
-  <Category>Productivity: Tools:</Category>
-  <Date>2020-07-06</Date>
-  <Name>Jira Service Desk</Name>
+  <Category>Cloud: Tools:</Category>
+  <Date>2020-11-16</Date>
+  <Name>JiraServiceDesk</Name>
   <Description>
     [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
-    Jira Service Desk is a fully featured service desk tool used by modern IT teams.
+	Jira Service Desk is a fully featured service desk tool used by modern IT teams.
   </Description>
   <Changes>
     [font size=5]Recent Changes[/font]
-    [font size=4]2020.07.06[/font]
+    [font size=4]2020.11.16[/font]
     - Initial Release
   </Changes>
   <Overview>
     Jira Service Desk is a fully featured service desk tool used by modern IT teams.
   </Overview>
   <Support>https://forums.unraid.net/topic/94096-support-ibracorp-all-images-and-files/</Support>
-  <Registry>https://hub.docker.com/r/atlassian/jira-servicedesk/</Registry>
+  <Registry>https://hub.docker.com/r/atlassian/jira-servicedesk</Registry>
   <GitHub>https://github.com/ibracorp/jira-servicedesk</GitHub>
-  <Repository>atlassian/jira-servicedesk</Repository>
+  <Repository>authelia/authelia</Repository>
   <Project>https://www.atlassian.com/software/jira/service-desk</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
-    <Mode>host</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
+    <Mode>bridge</Mode>
   </Networking>
   <Environment>
     <Variable>
@@ -50,15 +43,17 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/jira-servicedesk</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/user/appdata/JiraServiceDesk</HostDir>
+      <ContainerDir>/var/atlassian/application-data/jira</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <Icon>https://i.imgur.com/kUb6QPd.png</Icon>
+  <Icon>https://i.imgur.com/DCn2yiv.png</Icon>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://www.paypal.me/ramteksolutions</DonateLink>
   <DonateImg>https://i.imgur.com/VHSkew7.png</DonateImg>
   <ExtraParams></ExtraParams>
-</Containers>
+  <Config Name="Host Port 1" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8585</Config>
+  <Config Name="Host Path 1" Target="/var/atlassian/application-data/jira" Default="" Mode="rw" Description="Container Path: /var/atlassian/application-data/jira" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/JiraServiceDesk</Config>
+</Container>
