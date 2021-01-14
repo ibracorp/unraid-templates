@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://avatars0.githubusercontent.com/u/67491741?s=460&u=178c9fbf2744608a106b410c163bba9dc5b43b78&v=4</Icon>
+  <Profile>
+    We create Docker containers to get your homelab setup across a range of needs, from basic to enterprise level without discrimination.
+  </Profile>
+  <DonateLink>https://www.paypal.me/ramteksolutions</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+</Maintainer>
