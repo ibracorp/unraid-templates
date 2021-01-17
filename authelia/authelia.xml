@@ -15,15 +15,30 @@
   </Description>
   <Changes>
     [font size=5]Recent Changes[/font]
+    [font size=4]29/11/2020[/font]
+    - Updated Git page for IBRACORP/Authelia with new and updated information as provided by the community.
+    - Formatting and clean-up to make it easier to follow.
+    - Added LDAP instructions and DUO 2FA tips
+    A big thank you to all those who have helped develop the documentation!
+    [font size=4]16/11/2020[/font]
+    - Submitted XML template for Jira Service Desk for review to Community Applications.
+    [font size=4]04/07/2020[/font]
+    - Updated documentation to reflect the CONTAINERIP instead of SERVERIP where appropriate. Also updated the Protected Endpoint.conf to suit. (thanks to @Korshakov)
+    [font size=4]02/07/2020[/font]
+    - Under NPM config, added the YOURDOMAIN placeholder to Protected Endpoint.conf to be updated by the user.
+    [font size=4]30/06/2020[/font]
+    - Updated documentation with some advice for Let'sEncrypt (thanks to @kaiguy).
+    - Fixed missing semicolon on database instructions.
+    [font size=4]29/06/2020[/font]
+    - Updated documentation to assist with issue: No/infinite native login screen on endpoint
+    [font size=4]28/06/2020[/font]
+    - Updated documentation for Authelia to reflect that the XML is now published in Community Apps and no longer requires manual pull.
+    - Updated logo in XML for Authelia to show in CA.
+    - Updated Categories in XML for Authelia to be Security.
+    - Updated support thread with official Authelia links.
+    - Updated documentation for Authelia with instructions on bypassing authentication for API's (i.e. Sonarr/Ombi)
     [font size=4]2020.06.28[/font]
     - Initial Release
-
-    [font size=4]2020.06.28[/font]
-    - Updated documentation to reflect that the XML is now published in Community Apps and no longer requires manual pull.
-    - Updated logo in XML for Authelia to show in CA.
-    - Updated Categories in XML for Authelia to be Security and Tools.
-    - Added link to install guide.
-    - Added changelog in XML.
   </Changes>
   <Overview>
     Authelia is an open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal. It acts as a companion of reverse proxies like nginx, Traefik or HAProxy to let them know whether queries should pass through. Instructions: https://github.com/ibracorp/authelia.
