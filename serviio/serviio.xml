@@ -22,7 +22,7 @@ Make be sure to give it some then restart the container at least once. If you wa
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://www.paypal.me/ramteksolutions</DonateLink>
   <Description>Serviio is a freeware media server designed to let users stream music, video, or image files to DLNA compliant televisions, Blu-ray players, game consoles, and Android or Windows Mobile devices on a home network.&#xD;
-Make be sure to give it some then restart the container at least once. If you want to use a custom config you need to map the path: /opt/serviio/config to your AppData install directory.</Description>
+Make sure to give it some time to start up then restart the container at least once. If you want to use a custom config you need to map the path: /opt/serviio/config to your AppData install directory.</Description>
   <Networking>
     <Mode>ibraproxy</Mode>
     <Publish>
