@@ -18,7 +18,7 @@ Make be sure to give it some then restart the container at least once. If you wa
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1611644188</DateInstalled>
+  <DateInstalled>1611644756</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://www.paypal.me/ramteksolutions</DonateLink>
   <Description>Serviio is a freeware media server designed to let users stream music, video, or image files to DLNA compliant televisions, Blu-ray players, game consoles, and Android or Windows Mobile devices on a home network.&#xD;
@@ -60,7 +60,7 @@ Make be sure to give it some then restart the container at least once. If you wa
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/</HostDir>
+      <HostDir>/mnt/user/TV/</HostDir>
       <ContainerDir>/media/serviio</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -82,7 +82,7 @@ Make be sure to give it some then restart the container at least once. If you wa
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Host Path 5" Target="/media/serviio" Default="/mnt/user/" Mode="rw" Description="Path (root) to media content. ADD this path into the Serviio GUI" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+  <Config Name="Host Path 5" Target="/media/serviio" Default="/mnt/user/" Mode="rw" Description="Path (root) to media content. ADD the container path (/media/serviio) into Library &amp;gt; Shared Folder in Serviio GUI" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/TV/</Config>
   <Config Name="WEBUI" Target="23423" Default="23423" Mode="tcp" Description="WEBUI PORT&#13;&#10;Access by going to http://IP:23423/console" Type="Port" Display="always" Required="true" Mask="false">23423</Config>
   <Config Name="Host Port 2" Target="1900" Default="1900" Mode="tcp" Description="Container Port: 1900" Type="Port" Display="advanced" Required="true" Mask="false">1900</Config>
   <Config Name="Host Port 3" Target="23523" Default="23523" Mode="tcp" Description="Container Port: 23523" Type="Port" Display="advanced" Required="true" Mask="false">23523</Config>
