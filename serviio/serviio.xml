@@ -60,7 +60,7 @@ Make sure to give it some time to start up then restart the container at least o
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/TV/</HostDir>
+      <HostDir>/mnt/user/</HostDir>
       <ContainerDir>/media/serviio</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
