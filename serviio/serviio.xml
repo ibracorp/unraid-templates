@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Serviio</Name>
+  <Repository>riftbit/serviio</Repository>
+  <Registry>https://hub.docker.com/r/riftbit/serviio</Registry>
+  <Network>ibraproxy</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/94096-support-ibracorp-all-images-and-files/</Support>
+  <Project>https://serviio.org/</Project>
+  <Overview>Serviio is a freeware media server designed to let users stream music, video, or image files to DLNA compliant televisions, Blu-ray players, game consoles, and Android or Windows Mobile devices on a home network.&#xD;
+Make be sure to give it some then restart the container at least once. If you want to use a custom config you need to map the path: /opt/serviio/config to your AppData install directory.</Overview>
+  <Category>MediaServer:Video MediaServer:Music MediaServer:Books MediaServer:Photos MediaServer:Other</Category>
+  <WebUI>http://[IP]:[PORT:23423]/console</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/Pcals31.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1611644188</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://www.paypal.me/ramteksolutions</DonateLink>
+  <Description>Serviio is a freeware media server designed to let users stream music, video, or image files to DLNA compliant televisions, Blu-ray players, game consoles, and Android or Windows Mobile devices on a home network.&#xD;
+Make be sure to give it some then restart the container at least once. If you want to use a custom config you need to map the path: /opt/serviio/config to your AppData install directory.</Description>
+  <Networking>
+    <Mode>ibraproxy</Mode>
+    <Publish>
+      <Port>
+        <HostPort>23423</HostPort>
+        <ContainerPort>23423</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1900</HostPort>
+        <ContainerPort>1900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>23523</HostPort>
+        <ContainerPort>23523</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>23424</HostPort>
+        <ContainerPort>23424</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>23524</HostPort>
+        <ContainerPort>23524</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8895</HostPort>
+        <ContainerPort>8895</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/</HostDir>
+      <ContainerDir>/media/serviio</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/serviio/library</HostDir>
+      <ContainerDir>/opt/serviio/library</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/serviio/plugins</HostDir>
+      <ContainerDir>/opt/serviio/plugins</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/serviio/log</HostDir>
+      <ContainerDir>/opt/serviio/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 5" Target="/media/serviio" Default="/mnt/user/" Mode="rw" Description="Path (root) to media content. ADD this path into the Serviio GUI" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+  <Config Name="WEBUI" Target="23423" Default="23423" Mode="tcp" Description="WEBUI PORT&#13;&#10;Access by going to http://IP:23423/console" Type="Port" Display="always" Required="true" Mask="false">23423</Config>
+  <Config Name="Host Port 2" Target="1900" Default="1900" Mode="tcp" Description="Container Port: 1900" Type="Port" Display="advanced" Required="true" Mask="false">1900</Config>
+  <Config Name="Host Port 3" Target="23523" Default="23523" Mode="tcp" Description="Container Port: 23523" Type="Port" Display="advanced" Required="true" Mask="false">23523</Config>
+  <Config Name="Host Port 5" Target="23424" Default="23424" Mode="tcp" Description="Container Port: 23424" Type="Port" Display="advanced" Required="true" Mask="false">23424</Config>
+  <Config Name="Host Port 6" Target="23524" Default="23524" Mode="tcp" Description="Container Port: 23524" Type="Port" Display="advanced" Required="true" Mask="false">23524</Config>
+  <Config Name="Host Port 2" Target="8895" Default="8895" Mode="tcp" Description="Container Port: 8895" Type="Port" Display="advanced" Required="true" Mask="false">8895</Config>
+  <Config Name="Host Path 2" Target="/opt/serviio/library" Default="/mnt/user/appdata/serviio/library" Mode="rw" Description="Container Path: /opt/serviio/library" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/serviio/library</Config>
+  <Config Name="Host Path 3" Target="/opt/serviio/plugins" Default="/mnt/user/appdata/serviio/plugins" Mode="rw" Description="Container Path: /opt/serviio/plugins" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/serviio/plugins</Config>
+  <Config Name="Host Path 4" Target="/opt/serviio/log" Default="/mnt/user/appdata/serviio/log" Mode="rw" Description="Container Path: /opt/serviio/log" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/serviio/log</Config>
+</Container>
