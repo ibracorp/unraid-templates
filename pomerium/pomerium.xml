@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pomerium</Name>
+  <Repository>pomerium/pomerium</Repository>
+  <Registry>https://hub.docker.com/r/pomerium/pomerium</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/94096-support-ibracorp-all-images-and-files/</Support>
+  <Project>https://github.com/pomerium/pomerium</Project>
+  <Overview>Pomerium is an identity-aware proxy that enables secure access to internal applications. Pomerium provides a standardized interface to add access control to applications regardless of whether the application itself has authorization or authentication baked-in. Pomerium gateways both internal and external requests, and can be used in situations where you'd typically reach for a VPN. Check ports to ensure you do not have conflicts. **NOTE** You MUST: 1.Create a config.yaml file in appdata/pomerium/pomerium. The parameters for the file can be found here: https://www.pomerium.io/reference/ 2. Match your cookie secret in both the file and the variable below.</Overview>
+  <Category>Productivity: Security:</Category>
+  <WebUI>http://[IP]:[PORT:180]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/ia0TVxB.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1612666644</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
+  <Description>Pomerium is an identity-aware proxy that enables secure access to internal applications. Pomerium provides a standardized interface to add access control to applications regardless of whether the application itself has authorization or authentication baked-in. Pomerium gateways both internal and external requests, and can be used in situations where you'd typically reach for a VPN. Check ports to ensure you do not have conflicts. **NOTE** You MUST: 1.Create a config.yaml file in appdata/pomerium/pomerium. The parameters for the file can be found here: https://www.pomerium.io/reference/ 2. Match your cookie secret in both the file and the variable below.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>180</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5443</HostPort>
+        <ContainerPort>5443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pomerium</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pomerium/pomerium</HostDir>
+      <ContainerDir>/pomerium/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>COOKIE_SECRET</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Cookie Secret" Target="COOKIE_SECRET" Default="" Mode="" Description="Container Variable: COOKIE_SECRET" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="HTTPS" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">1443</Config>
+  <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">180</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/pomerium" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/pomerium</Config>
+  <Config Name="Pomerium" Target="/pomerium/" Default="/mnt/user/appdata/pomerium/pomerium" Mode="rw" Description="Container Path: /pomerium/" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/pomerium/pomerium</Config>
+  <Config Name="5443" Target="5443" Default="" Mode="tcp" Description="Container Port: 5443" Type="Port" Display="advanced" Required="true" Mask="false">5443</Config>
+</Container>
