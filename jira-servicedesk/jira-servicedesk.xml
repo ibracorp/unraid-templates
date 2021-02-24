@@ -51,7 +51,7 @@
   <WebUI>http://[IP]:[PORT:8585]/</WebUI>
   <Icon>https://i.imgur.com/rNMse7m.png</Icon>
   <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://www.paypal.me/ramteksolutions</DonateLink>
+  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
   <DonateImg>https://i.imgur.com/VHSkew7.png</DonateImg>
   <ExtraParams></ExtraParams>
   <Config Name="Host Port 1" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8585</Config>
