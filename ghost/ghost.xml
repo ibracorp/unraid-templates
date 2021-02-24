@@ -85,52 +85,52 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>smtp.gmail.com</Value>
+      <Value>smtp.gmail.com</Value>
       <Name>SMTP_HOST</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>587</Value>
+      <Value>587</Value>
       <Name>SMTP_PORT</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>your_email@gmail.com<Value/>
+      <Value>your_email@gmail.com</Value>
       <Name>SMTP_USER</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>password<Value/>
+      <Value>password</Value>
       <Name>SMTP_PASSWORD</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>you@domain.com<Value/>
+      <Value>you@domain.com</Value>
       <Name>SMTP_FROM_ADDRESS</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>GMail<Value/>
+      <Value>GMail</Value>
       <Name>SMTP_SERVICE</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>true<Value/>
+      <Value>true</Value>
       <Name>SMTP_SECURE_CONNECTION</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>http<Value/>
+      <Value>http</Value>
       <Name>GHOST_PROTOCOL</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>user<Value/>
+      <Value>user</Value>
       <Name>GHOST_USERNAME</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>password<Value/>
+      <Value>password</Value>
       <Name>GHOST_PASSWORD</Name>
       <Mode/>
     </Variable>
