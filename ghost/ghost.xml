@@ -142,7 +142,7 @@
   </Environment>
   <Labels/>
   <Config Name="GHOST_PORT_NUMBER" Target="GHOST_PORT_NUMBER" Default="3001" Mode="" Description="Port number used in the generated application URLs. Default: 80" Type="Variable" Display="always" Required="true" Mask="false">2368</Config>
-  <Config Name="GHOST_HOST" Target="GHOST_HOST" Default="localhost" Mode="" Description="If you want to access your application from a public IP or hostname you need to set this environment variable to your public IP or hostname. E.g. blog.example.com" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.100</Config>
+  <Config Name="GHOST_HOST" Target="GHOST_HOST" Default="localhost" Mode="" Description="If you want to access your application from a public IP or hostname you need to set this environment variable to your public IP or hostname. E.g. blog.example.com. Use IP if reverse proxying." Type="Variable" Display="always" Required="true" Mask="false">192.168.1.100</Config>
   <Config Name="GHOST_EMAIL" Target="GHOST_EMAIL" Default="user@example.com" Mode="" Description="Ghost application email. Default: user@example.com" Type="Variable" Display="always" Required="false" Mask="false">user@example.com</Config>
   <Config Name="BLOG_TITLE" Target="BLOG_TITLE" Default="User's Blog" Mode="" Description="Ghost blog title. Default: User's Blog" Type="Variable" Display="always" Required="false" Mask="false">User's Blog</Config>
   <Config Name="MARIADB_HOST" Target="MARIADB_HOST" Default="192.168.1.100" Mode="" Description="Hostname for MariaDB server. Default: mariadb" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.100</Config>
