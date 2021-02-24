@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://bit.ly/2MwDPTV</Support>
   <Project>https://github.com/TryGhost/Ghost</Project>
-  <Overview>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP.</Overview>
+  <Overview>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP. Access admin page by adding /ghost to URL. i.e. https://blog.example.com/ghost</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:2368]/</WebUI>
   <TemplateURL/>
@@ -20,7 +20,7 @@
   <DateInstalled>1614161374</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
-  <Description>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP.</Description>
+  <Description>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP. Access admin page by adding /ghost to URL. i.e. https://blog.example.com/ghost</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
