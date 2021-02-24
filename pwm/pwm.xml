@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/94096-support-ibracorp-all-images-and-files</Support>
+  <Support>https://bit.ly/2MwDPTV</Support>
   <Project>https://github.com/pwm-project/pwm</Project>
   <Overview>PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.</Overview>
   <Category>Security:</Category>
@@ -19,7 +19,7 @@
   <CPUset/>
   <DateInstalled>1610674353</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://www.paypal.me/ramteksolutions</DonateLink>
+  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
   <Description>PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.</Description>
   <Networking>
     <Mode>bridge</Mode>
