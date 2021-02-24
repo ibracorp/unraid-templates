@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Ghost</Name>
+  <Repository>bitnami/ghost</Repository>
+  <Registry>https://hub.docker.com/r/bitnami/ghost/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://bit.ly/2MwDPTV</Support>
+  <Project>https://github.com/TryGhost/Ghost</Project>
+  <Overview>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:3001]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/bPEsHjz.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1614152864</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
+  <Description>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ghost</HostDir>
+      <ContainerDir>/bitnami</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>3001</Value>
+      <Name>GHOST_PORT_NUMBER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>http://localhost</Value>
+      <Name>GHOST_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>user@example.com</Value>
+      <Name>GHOST_EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>User's Blog</Value>
+      <Name>BLOG_TITLE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.1.100</Value>
+      <Name>MARIADB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>MARIADB_PORT_NUMBER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>ghost</Value>
+      <Name>GHOST_DATABASE_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>ghost</Value>
+      <Name>GHOST_DATABASE_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>GHOST_DATABASE_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>no</Value>
+      <Name>ALLOW_EMPTY_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SMTP_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SMTP_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SMTP_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SMTP_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SMTP_FROM_ADDRESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SMTP_SERVICE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>SMTP_SECURE_CONNECTION</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="GHOST_PORT_NUMBER" Target="GHOST_PORT_NUMBER" Default="3001" Mode="" Description="Port number used in the generated application URLs. Default: 80" Type="Variable" Display="always" Required="true" Mask="false">3001</Config>
+  <Config Name="GHOST_HOST" Target="GHOST_HOST" Default="http://localhost" Mode="" Description="If you want to access your application from a public IP or hostname you need to set this environment variable to your public IP or hostname." Type="Variable" Display="always" Required="true" Mask="false">http://localhost</Config>
+  <Config Name="GHOST_EMAIL" Target="GHOST_EMAIL" Default="user@example.com" Mode="" Description="Ghost application email. Default: user@example.com" Type="Variable" Display="always" Required="false" Mask="false">user@example.com</Config>
+  <Config Name="BLOG_TITLE" Target="BLOG_TITLE" Default="User's Blog" Mode="" Description="Ghost blog title. Default: User's Blog" Type="Variable" Display="always" Required="false" Mask="false">User's Blog</Config>
+  <Config Name="MARIADB_HOST" Target="MARIADB_HOST" Default="192.168.1.100" Mode="" Description="Hostname for MariaDB server. Default: mariadb" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.100</Config>
+  <Config Name="MARIADB_PORT_NUMBER" Target="MARIADB_PORT_NUMBER" Default="3306" Mode="" Description="Port used by MariaDB server. Default: 3306" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="GHOST_DATABASE_NAME" Target="GHOST_DATABASE_NAME" Default="ghost" Mode="" Description="Database name that Ghost will use to connect with the database. Default: bitnami_ghost" Type="Variable" Display="always" Required="true" Mask="false">ghost</Config>
+  <Config Name="GHOST_DATABASE_USER" Target="GHOST_DATABASE_USER" Default="ghost" Mode="" Description="Database user that Ghost will use to connect with the database. Default: bn_ghost" Type="Variable" Display="always" Required="true" Mask="false">ghost</Config>
+  <Config Name="GHOST_DATABASE_PASSWORD" Target="GHOST_DATABASE_PASSWORD" Default="" Mode="" Description="Database password that Ghost will use to connect with the database. No defaults." Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="no" Mode="" Description="It can be used to allow blank passwords. Default: no" Type="Variable" Display="always" Required="false" Mask="false">no</Config>
+  <Config Name="SMTP_HOST" Target="SMTP_HOST" Default="" Mode="" Description="SMTP host. E.g. smtp.gmail.com" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="" Mode="" Description="SMTP port. E.g. 587" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_USER" Target="SMTP_USER" Default="" Mode="" Description="SMTP account user. E.g. your_email@gmail.com" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="" Mode="" Description="SMTP account password." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_FROM_ADDRESS" Target="SMTP_FROM_ADDRESS" Default="" Mode="" Description="SMTP from address." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_SERVICE" Target="SMTP_SERVICE" Default="" Mode="" Description="SMTP service to use. E.g. GMail or Mailgun" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_SECURE_CONNECTION" Target="SMTP_SECURE_CONNECTION" Default="" Mode="" Description="Use a secure connection for SMTP. true or false" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Appdata" Target="/bitnami" Default="/mnt/user/appdata/ghost" Mode="rw" Description="Appdata" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ghost</Config>
+</Container>
