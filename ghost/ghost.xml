@@ -130,7 +130,7 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value>bitnami123/Value>
+      <Value>bitnami123</Value>
       <Name>GHOST_PASSWORD</Name>
       <Mode/>
     </Variable>
