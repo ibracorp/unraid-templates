@@ -17,7 +17,7 @@
   <Overview>
     Jira Service Desk is a fully featured service desk tool used by modern IT teams.
   </Overview>
-  <Support>https://forums.unraid.net/topic/94096-support-ibracorp-all-images-and-files/</Support>
+  <Support>https://bit.ly/2MwDPTV</Support>
   <Registry>https://hub.docker.com/r/atlassian/jira-servicedesk</Registry>
   <GitHub>https://github.com/ibracorp/jira-servicedesk</GitHub>
   <Repository>atlassian/jira-servicedesk</Repository>
