@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1614238562</DateInstalled>
+  <DateInstalled>1614238708</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
   <Description>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP.</Description>
@@ -130,7 +130,7 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value> bitnami123</Value>
+      <Value>bitnami123</Value>
       <Name>GHOST_PASSWORD</Name>
       <Mode/>
     </Variable>
@@ -154,7 +154,7 @@
   <Config Name="SMTP_SECURE_CONNECTION" Target="SMTP_SECURE_CONNECTION" Default="true" Mode="" Description="Use a secure connection for SMTP. true or false" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
   <Config Name="GHOST_PROTOCOL" Target="GHOST_PROTOCOL" Default="http" Mode="" Description="Protocol to use in the application URLs. Valid values are https or https. Default: http" Type="Variable" Display="always" Required="true" Mask="false">http</Config>
   <Config Name="GHOST_USERNAME" Target="GHOST_USERNAME" Default="user" Mode="" Description="Ghost application username. Default: user" Type="Variable" Display="always" Required="true" Mask="false">user</Config>
-  <Config Name="GHOST_PASSWORD" Target="GHOST_PASSWORD" Default=" bitnami123" Mode="" Description="Ghost application password. The minimum length is 10 characters. Default: bitnami123" Type="Variable" Display="always" Required="true" Mask="false"> bitnami123</Config>
+  <Config Name="GHOST_PASSWORD" Target="GHOST_PASSWORD" Default=" bitnami123" Mode="" Description="Ghost application password. The minimum length is 10 characters. Default: bitnami123" Type="Variable" Display="always" Required="true" Mask="false">bitnami123</Config>
   <Config Name="WebUI" Target="2368" Default="2368" Mode="tcp" Description="WebUI Port" Type="Port" Display="advanced-hide" Required="true" Mask="false">2368</Config>
   <Config Name="Appdata" Target="/bitnami" Default="/mnt/user/appdata/ghost" Mode="rw" Description="Appdata" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/ghost</Config>
 </Container>
