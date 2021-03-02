@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Cachet-URL-Monitor</Name>
+  <Repository>mtakaki/cachet-url-monitor</Repository>
+  <Registry>https://hub.docker.com/r/mtakaki/cachet-url-monitor</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://bit.ly/2MwDPTV</Support>
+  <Project>https://pypi.python.org/pypi/cachet-url-monitor</Project>
+  <Overview>Python plugin for cachet that monitors an URL, verifying it's response status and latency. The frequency the URL is tested is configurable, along with the assertion applied to the request response. Check the Docker Hub link for instructions. IBRACORP video (on YouTube) will be out soon, too. </Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/dSBbxqj.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1614664697</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
+  <Description>Python plugin for cachet that monitors an URL, verifying it's response status and latency. The frequency the URL is tested is configurable, along with the assertion applied to the request response. Check the Docker Hub link for instructions. IBRACORP video (on YouTube) will be out soon, too. </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/cachet-url-monitor/</HostDir>
+      <ContainerDir>/usr/src/app/config/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Appdata" Target="/usr/src/app/config/" Default="" Mode="rw" Description="Container Path: /usr/src/app/config/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cachet-url-monitor/</Config>
+</Container>

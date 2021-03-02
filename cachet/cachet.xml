@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Cachet</Name>
+  <Repository>cachethq/docker:latest</Repository>
+  <Registry>https://hub.docker.com/r/cachethq/docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://bit.ly/2MwDPTV</Support>
+  <Project>https://github.com/CachetHQ/Cachet</Project>
+  <Overview>Cachet is a beautiful and powerful open source status page system, a free replacement for services such as StatusPage.io, Status.io, and others. Docs: https://docs.cachethq.io/docs/installing-cachet</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/dSBbxqj.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1614664361</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
+  <Description>Cachet is a beautiful and powerful open source status page system, a free replacement for services such as StatusPage.io, Status.io, and others. Docs: https://docs.cachethq.io/docs/installing-cachet</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Cachet/</HostDir>
+      <ContainerDir>/var/www/cachet/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>mysql</Value>
+      <Name>DB_DRIVER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>base64:2iJWPWu9PWzkI4B2CcdVYQo0CPvtXIhS1vVi/GCGn5A=</Value>
+      <Name>APP_KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.1.100</Value>
+      <Name>DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>cachet</Value>
+      <Name>DB_DATABASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>cachet</Value>
+      <Name>DB_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>DB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>DB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>smtp</Value>
+      <Name>MAIL_DRIVER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>smtp.mailgun.org</Value>
+      <Name>MAIL_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>587</Value>
+      <Name>MAIL_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>postmaster@domain.com</Value>
+      <Name>MAIL_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>MAIL_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>status@domain.com</Value>
+      <Name>MAIL_ADDRESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Status</Value>
+      <Name>MAIL_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>tls</Value>
+      <Name>MAIL_ENCRYPTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.1.100</Value>
+      <Name>REDIS_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>REDIS_DATABASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>6379</Value>
+      <Name>REDIS_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>APP_DEBUG</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="DB_DRIVER" Target="DB_DRIVER" Default="" Mode="" Description="Container Variable: DB_DRIVER" Type="Variable" Display="always" Required="true" Mask="false">mysql</Config>
+  <Config Name="APP_KEY" Target="APP_KEY" Default="" Mode="" Description="Container Variable: APP_KEY. Some random string" Type="Variable" Display="always" Required="false" Mask="false">base64:2iJWPWu9PWzkI4B2CcdVYQo0CPvtXIhS1vVi/GCGn5A=</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.100</Config>
+  <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="" Mode="" Description="Container Variable: DB_DATABASE" Type="Variable" Display="always" Required="false" Mask="false">cachet</Config>
+  <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="" Mode="" Description="Container Variable: DB_USERNAME" Type="Variable" Display="always" Required="false" Mask="false">cachet</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode="" Description="Container Variable: DB_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="" Mode="" Description="Container Variable: DB_PORT" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="MAIL_DRIVER" Target="MAIL_DRIVER" Default="" Mode="" Description="Container Variable: MAIL_DRIVER" Type="Variable" Display="always" Required="false" Mask="false">smtp</Config>
+  <Config Name="MAIL_HOST" Target="MAIL_HOST" Default="" Mode="" Description="Container Variable: MAIL_HOST" Type="Variable" Display="always" Required="false" Mask="false">smtp.mailgun.org</Config>
+  <Config Name="MAIL_PORT" Target="MAIL_PORT" Default="" Mode="" Description="Container Variable: MAIL_PORT" Type="Variable" Display="always" Required="false" Mask="false">587</Config>
+  <Config Name="MAIL_USERNAME" Target="MAIL_USERNAME" Default="" Mode="" Description="Container Variable: MAIL_USERNAME" Type="Variable" Display="always" Required="false" Mask="false">postmaster@domain.com</Config>
+  <Config Name="MAIL_PASSWORD" Target="MAIL_PASSWORD" Default="" Mode="" Description="Container Variable: MAIL_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="MAIL_ADDRESS" Target="MAIL_ADDRESS" Default="" Mode="" Description="Container Variable: MAIL_ADDRESS" Type="Variable" Display="always" Required="false" Mask="false">status@domain.com</Config>
+  <Config Name="MAIL_NAME" Target="MAIL_NAME" Default="" Mode="" Description="Container Variable: MAIL_NAME" Type="Variable" Display="always" Required="false" Mask="false">Status</Config>
+  <Config Name="MAIL_ENCRYPTION" Target="MAIL_ENCRYPTION" Default="" Mode="" Description="Container Variable: MAIL_ENCRYPTION" Type="Variable" Display="always" Required="false" Mask="false">tls</Config>
+  <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="" Mode="" Description="Container Variable: REDIS_HOST" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.100</Config>
+  <Config Name="REDIS_DATABASE" Target="REDIS_DATABASE" Default="" Mode="" Description="Container Variable: REDIS_DATABASE" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="" Mode="" Description="Container Variable: REDIS_PORT" Type="Variable" Display="always" Required="false" Mask="false">6379</Config>
+  <Config Name="Port" Target="8000" Default="" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="advanced" Required="false" Mask="false">8000</Config>
+  <Config Name="APP_DEBUG" Target="APP_DEBUG" Default="" Mode="" Description="Container Variable: APP_DEBUG" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="Appdata" Target="/var/www/cachet/" Default="" Mode="rw" Description="Container Path: /var/www/Cachet/" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/Cachet/</Config>
+</Container>
