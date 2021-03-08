@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Matomo</Name>
+  <Repository>matomo</Repository>
+  <Registry>https://hub.docker.com/_/matomo</Registry>
+  <Network>ibraproxy</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://bit.ly/2MwDPTV</Support>
+  <Project>https://github.com/matomo-org/matomo</Project>
+  <Overview>Matomo, formerly Piwik, is a free and open-source web analytics application developed by a team of international developers, that runs on a PHP/MySQL webserver. It tracks online visits to one or more websites and displays reports on these visits for analysis.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/mRIhLHE.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1615191579</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
+  <Description>Matomo, formerly Piwik, is a free and open-source web analytics application developed by a team of international developers, that runs on a PHP/MySQL webserver. It tracks online visits to one or more websites and displays reports on these visits for analysis.</Description>
+  <Networking>
+    <Mode>ibraproxy</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8383</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/matomo</HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>192.168.1.100</Value>
+      <Name>MATOMO_DATABASE_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>MATOMO_DATABASE_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>matomo</Value>
+      <Name>MATOMO_DATABASE_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>MATOMO_DATABASE_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>matomo</Value>
+      <Name>MATOMO_DATABASE_DBNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.1.100</Value>
+      <Name>MATOMO_SERVER_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>MYSQL</Value>
+      <Name>MATOMO_DATABASE_ADAPTER</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="WebUI" Target="80" Default="8383" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8383</Config>
+  <Config Name="Appdata" Target="/var/www/html" Default="/mnt/user/appdata/matomo" Mode="rw" Description="Container Path: /var/www/html" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/matomo</Config>
+  <Config Name="MATOMO_DATABASE_HOST" Target="MATOMO_DATABASE_HOST" Default="192.168.1.100" Mode="" Description="IP or hostname of the database server" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.100</Config>
+  <Config Name="MATOMO_DATABASE_PORT" Target="MATOMO_DATABASE_PORT" Default="3306" Mode="" Description="Port of the database server" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="MATOMO_DATABASE_USERNAME" Target="MATOMO_DATABASE_USERNAME" Default="matomo" Mode="" Description="Username of the database user" Type="Variable" Display="always" Required="true" Mask="false">matomo</Config>
+  <Config Name="MATOMO_DATABASE_PASSWORD" Target="MATOMO_DATABASE_PASSWORD" Default="password" Mode="" Description="Password of the database user" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="MATOMO_DATABASE_DBNAME" Target="MATOMO_DATABASE_DBNAME" Default="matomo" Mode="" Description="Database name" Type="Variable" Display="always" Required="true" Mask="false">matomo</Config>
+  <Config Name="MATOMO_SERVER_NAME" Target="MATOMO_SERVER_NAME" Default="192.168.1.100" Mode="" Description="Container Variable: MATOMO_SERVER_NAME" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.100</Config>
+  <Config Name="MATOMO_DATABASE_ADAPTER" Target="MATOMO_DATABASE_ADAPTER" Default="MYSQL" Mode="" Description="Container Variable: MATOMO_DATABASE_ADAPTER" Type="Variable" Display="advanced" Required="true" Mask="false">MYSQL</Config>
+</Container>
