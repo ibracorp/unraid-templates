@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>PWM</Name>
+  <Name>pwm</Name>
   <Repository>fjudith/pwm</Repository>
   <Registry>https://hub.docker.com/r/fjudith/pwm</Registry>
   <Network>bridge</Network>
@@ -12,14 +12,14 @@
   <Overview>PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.</Overview>
   <Category>Security:</Category>
   <WebUI>http://[IP]:[PORT:8282]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/pwm/pwm.xml</TemplateURL>
   <Icon>https://i.imgur.com/dAMqu51.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1610674353</DateInstalled>
-  <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
+  <DateInstalled>1624969506</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
   <Description>PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.</Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -31,8 +31,15 @@
       </Port>
     </Publish>
   </Networking>
-  <Data/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pwm</HostDir>
+      <ContainerDir>/usr/share/pwm</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Environment/>
   <Labels/>
   <Config Name="Host Port 1" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8282</Config>
+  <Config Name="appdata" Target="/usr/share/pwm" Default="" Mode="rw" Description="Container Path: /usr/share/pwm" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/pwm</Config>
 </Container>
