@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1624969506</DateInstalled>
+  <DateInstalled>1624970015</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.</Description>
@@ -38,8 +38,15 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>NoFileLock</Value>
+      <Name>PWM_APPLICATIONFLAGS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
   <Config Name="Host Port 1" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8282</Config>
+  <Config Name="File Lock Bypass" Target="PWM_APPLICATIONFLAGS" Default="PWM_APPLICATIONFLAGS" Mode="" Description="Container Variable: PWM_APPLICATIONFLAGS" Type="Variable" Display="always" Required="false" Mask="false">NoFileLock</Config>
   <Config Name="appdata" Target="/usr/share/pwm" Default="" Mode="rw" Description="Container Path: /usr/share/pwm" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/pwm</Config>
 </Container>
