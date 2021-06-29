@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maintainer>
-  <Icon>https://i.imgur.com/CbvjDtA.png</Icon>
+  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/resized_glitch_skull.gif</Icon>
   <Profile>
-    We create Docker templates to get your homelab set up across a range of needs, from basic all the way to enterprise level - without discrimination. We just want to help the community.
+    We create Docker templates and YouTube videos to get your homelab set up across a range of needs, from basic all the way to enterprise level. Join our Discord!
   </Profile>
-  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <DonateText>If you like my work please consider Donating.</DonateText>
-  <WebPage>https://bit.ly/3q39SJO</WebPage>
-  <Discord>https://bit.ly/2YgjcOq</Discord>
+  <WebPage>https://ibracorp.io</WebPage>
+  <Discord>https://discord.gg/VWAG7rZ</Discord>
 </Maintainer>
