@@ -26,8 +26,7 @@
   <WebUI>http://[IP]:[PORT:9091]/</WebUI>
   <Icon>https://i.imgur.com/DCn2yiv.png</Icon>
   <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
-  <DonateImg>https://i.imgur.com/VHSkew7.png</DonateImg>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Networking>
     <Mode>bridge</Mode>
   </Networking>
