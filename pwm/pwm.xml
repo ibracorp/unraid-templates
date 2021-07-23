@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://bit.ly/2MwDPTV</Support>
+  <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://github.com/pwm-project/pwm</Project>
   <Overview>PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.</Overview>
   <Category>Security:</Category>
