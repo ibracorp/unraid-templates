@@ -4,23 +4,17 @@
   <Repository>matomo</Repository>
   <Registry>https://hub.docker.com/_/matomo</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://bit.ly/2MwDPTV</Support>
+  <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://github.com/matomo-org/matomo</Project>
   <Overview>Matomo, formerly Piwik, is a free and open-source web analytics application developed by a team of international developers, that runs on a PHP/MySQL webserver. It tracks online visits to one or more websites and displays reports on these visits for analysis.</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/matomo/matomo.xml<TemplateURL/>
   <Icon>https://i.imgur.com/mRIhLHE.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1615191764</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
-  <Description>Matomo, formerly Piwik, is a free and open-source web analytics application developed by a team of international developers, that runs on a PHP/MySQL webserver. It tracks online visits to one or more websites and displays reports on these visits for analysis.</Description>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
