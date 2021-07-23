@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <TemplateURL></TemplateURL>
+  <TemplateURL>https://github.com/ibracorp/unraid-templates/blob/master/authelia/authelia.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Security: Tools:</Category>
   <Date>2020-06-28</Date>
