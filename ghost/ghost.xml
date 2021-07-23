@@ -11,7 +11,6 @@
   <Overview>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP.</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:2368]/</WebUI>
-  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/ghost/ghost.xml<TemplateURL/>
   <Icon>https://i.imgur.com/bPEsHjz.png</Icon>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
