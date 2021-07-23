@@ -4,25 +4,18 @@
   <Repository>riftbit/serviio</Repository>
   <Registry>https://hub.docker.com/r/riftbit/serviio</Registry>
   <Network>ibraproxy</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://bit.ly/2MwDPTV</Support>
+  <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://serviio.org/</Project>
   <Overview>Serviio is a freeware media server designed to let users stream music, video, or image files to DLNA compliant televisions, Blu-ray players, game consoles, and Android or Windows Mobile devices on a home network.&#xD;
 Make be sure to give it some then restart the container at least once. If you want to use a custom config you need to map the path: /opt/serviio/config to your AppData install directory.</Overview>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Books MediaServer:Photos MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:23423]/console</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/serviio/serviio.xml<TemplateURL/>
   <Icon>https://i.imgur.com/Pcals31.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1611644756</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
-  <Description>Serviio is a freeware media server designed to let users stream music, video, or image files to DLNA compliant televisions, Blu-ray players, game consoles, and Android or Windows Mobile devices on a home network.&#xD;
-Make sure to give it some time to start up then restart the container at least once. If you want to use a custom config you need to map the path: /opt/serviio/config to your AppData install directory.</Description>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Networking>
     <Mode>ibraproxy</Mode>
     <Publish>
