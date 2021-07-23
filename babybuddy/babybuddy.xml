@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/linuxserver/docker-babybuddy/issues/new/choose</Support>
   <Project>https://github.com/linuxserver/docker-babybuddy</Project>
-  <Overview>[Babybuddy](https://github.com/babybuddy/babybuddy) is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict babys needs without (as much) guess work.&#xD;
+  <Overview>Babybuddy is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict babys needs without (as much) guess work.&#xD;
 &#xD;
 The default user/pass are admin:admin&#xD;
 &#xD;
