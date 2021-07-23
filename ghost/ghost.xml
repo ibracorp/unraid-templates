@@ -4,23 +4,17 @@
   <Repository>bitnami/ghost</Repository>
   <Registry>https://hub.docker.com/r/bitnami/ghost/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://bit.ly/2MwDPTV</Support>
+  <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://github.com/TryGhost/Ghost</Project>
   <Overview>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP.</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:2368]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/ghost/ghost.xml<TemplateURL/>
   <Icon>https://i.imgur.com/bPEsHjz.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1614238708</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
-  <Description>Ghost is a free and open-source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications. This version includes mapping for MariaDB and SMTP. Big credits to Bitnami for the amazing image. Another fine product, brought to you by IBRACORP.</Description>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
