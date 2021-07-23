@@ -5,16 +5,9 @@
   <Category>Security: Tools:</Category>
   <Date>2020-06-28</Date>
   <Name>Authelia</Name>
-  <Description>
-    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
-    Authelia is an open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal. It acts as a companion of reverse proxies like nginx, Traefik or HAProxy to let them know whether queries should pass through. Instructions: https://github.com/ibracorp/authelia.
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where authelia will store it's configuration file.[br]
-    [b][u][span style='color: #E80000;']Documentation[/span][/u][/b][br]
-    https://docs.authelia.com[br][br]
-  </Description>
   <Overview>
     Authelia is an open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal. It acts as a companion of reverse proxies like nginx, Traefik or HAProxy to let them know whether queries should pass through. Instructions: https://github.com/ibracorp/authelia.
+    Our docs can be found at https://docs.ibracorp.io
   </Overview>
   <Support>https://bit.ly/2MwDPTV</Support>
   <Registry>https://hub.docker.com/r/authelia/authelia/</Registry>
