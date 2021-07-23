@@ -4,22 +4,17 @@
   <Repository>cachethq/docker:latest</Repository>
   <Registry>https://hub.docker.com/r/cachethq/docker</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://bit.ly/2MwDPTV</Support>
+  <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://github.com/CachetHQ/Cachet</Project>
   <Overview>Cachet is a beautiful and powerful open source status page system, a free replacement for services such as StatusPage.io, Status.io, and others. Docs: https://docs.cachethq.io/docs/installing-cachet</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/cachet/cachet.xml<TemplateURL/>
   <Icon>https://i.imgur.com/dSBbxqj.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1614664361</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Description>Cachet is a beautiful and powerful open source status page system, a free replacement for services such as StatusPage.io, Status.io, and others. Docs: https://docs.cachethq.io/docs/installing-cachet</Description>
   <Networking>
     <Mode>bridge</Mode>
