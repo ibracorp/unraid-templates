@@ -55,7 +55,7 @@ Full credit to the developers and LSIO for the container. I just wanted to get i
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/babybuddy" Mode="rw" Description="Contains all relevant configuration and data." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/babybuddy</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/babybuddy" Mode="rw" Description="Contains all relevant configuration and data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/babybuddy</Config>
   <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Port for the WebUI" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
