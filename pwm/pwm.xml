@@ -4,7 +4,6 @@
   <Repository>fjudith/pwm</Repository>
   <Registry>https://hub.docker.com/r/fjudith/pwm</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://bit.ly/2MwDPTV</Support>
@@ -14,12 +13,8 @@
   <WebUI>http://[IP]:[PORT:8282]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/pwm/pwm.xml</TemplateURL>
   <Icon>https://i.imgur.com/dAMqu51.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1624970015</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Description>PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.</Description>
   <Networking>
     <Mode>bridge</Mode>
