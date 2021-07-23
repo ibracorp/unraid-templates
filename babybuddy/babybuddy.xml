@@ -1,24 +1,63 @@
 <?xml version="1.0"?>
-<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
 <Container version="2">
-    <Name>babybuddy</Name>
-    <Repository>ghcr.io/linuxserver/babybuddy</Repository>
-    <Registry>https://github.com/orgs/linuxserver/packages/container/package/babybuddy</Registry>
-    <DonateText>Donations</DonateText>
-    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
-    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
-    <Network>bridge</Network>
-    <Privileged>false</Privileged>
-    <Support>https://github.com/linuxserver/docker-babybuddy/issues/new/choose</Support>
-    <Shell>bash</Shell>
-    <Project>https://github.com/babybuddy/babybuddy</Project>
-    <Overview>[Babybuddy](https://github.com/babybuddy/babybuddy) is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby&#39;s needs without (as much) guess work.</Overview>
-    <WebUI>http://[IP]:[PORT:8000]</WebUI>
-    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/babybuddy.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/babybuddy-logo.png</Icon>
-    <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="the port for the web ui" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration and data." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Name>BabyBuddy</Name>
+  <Repository>linuxserver/babybuddy</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/babybuddy</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-babybuddy/issues/new/choose</Support>
+  <Project>https://github.com/linuxserver/docker-babybuddy</Project>
+  <Overview>[Babybuddy](https://github.com/babybuddy/babybuddy) is a buddy for babies! Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict babys needs without (as much) guess work.&#xD;
+&#xD;
+The default user/pass are admin:admin&#xD;
+&#xD;
+Full credit to the developers and LSIO for the container. I just wanted to get it out to people who need it, please support their work using the donation link in the template.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/babybuddy.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/babybuddy-logo.png</Icon>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/babybuddy</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>022</Value>
+      <Name>UMASK</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/babybuddy" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/babybuddy</Config>
+  <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="Port for the WebUI" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
