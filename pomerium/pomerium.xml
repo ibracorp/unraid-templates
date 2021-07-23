@@ -4,23 +4,17 @@
   <Repository>pomerium/pomerium</Repository>
   <Registry>https://hub.docker.com/r/pomerium/pomerium</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://bit.ly/2MwDPTV</Support>
+  <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://github.com/pomerium/pomerium</Project>
   <Overview>Pomerium is an identity-aware proxy that enables secure access to internal applications. Pomerium provides a standardized interface to add access control to applications regardless of whether the application itself has authorization or authentication baked-in. Pomerium gateways both internal and external requests, and can be used in situations where you'd typically reach for a VPN. Check ports to ensure you do not have conflicts. **NOTE** You MUST: 1.Create a config.yaml file in appdata/pomerium/pomerium. The parameters for the file can be found here: https://www.pomerium.io/reference/ 2. Match your cookie secret in both the file and the variable below.</Overview>
   <Category>Productivity: Security:</Category>
   <WebUI>http://[IP]:[PORT:180]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/pomerium/pomerium.xml<TemplateURL/>
   <Icon>https://i.imgur.com/oF39h9B.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1612666644</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
-  <Description>Pomerium is an identity-aware proxy that enables secure access to internal applications. Pomerium provides a standardized interface to add access control to applications regardless of whether the application itself has authorization or authentication baked-in. Pomerium gateways both internal and external requests, and can be used in situations where you'd typically reach for a VPN. Check ports to ensure you do not have conflicts. **NOTE** You MUST: 1.Create a config.yaml file in appdata/pomerium/pomerium. The parameters for the file can be found here: https://www.pomerium.io/reference/ 2. Match your cookie secret in both the file and the variable below.</Description>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
