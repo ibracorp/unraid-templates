@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <TemplateURL></TemplateURL>
+  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/jira-servicedesk/jira-servicedesk.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Cloud: Tools:</Category>
   <Date>2020-11-16</Date>
@@ -9,21 +9,18 @@
     [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
 	Jira Service Desk is a fully featured service desk tool used by modern IT teams.
   </Description>
-  <Changes>
-    [font size=5]Recent Changes[/font]
-    [font size=4]2020.11.16[/font]
-    - Initial Release
-  </Changes>
   <Overview>
     Jira Service Desk is a fully featured service desk tool used by modern IT teams.
   </Overview>
-  <Support>https://bit.ly/2MwDPTV</Support>
+  <Support>https://discord.gg/VWAG7rZ</Support>
   <Registry>https://hub.docker.com/r/atlassian/jira-servicedesk</Registry>
   <GitHub>https://github.com/ibracorp/jira-servicedesk</GitHub>
   <Repository>atlassian/jira-servicedesk</Repository>
   <Project>https://www.atlassian.com/software/jira/service-desk</Project>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Networking>
     <Mode>bridge</Mode>
   </Networking>
