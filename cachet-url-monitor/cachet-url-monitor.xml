@@ -11,7 +11,6 @@
   <Overview>Python plugin for cachet that monitors an URL, verifying it's response status and latency. The frequency the URL is tested is configurable, along with the assertion applied to the request response. Check the Docker Hub link for instructions. IBRACORP video (on YouTube) will be out soon, too. </Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/cachet-url-monitor/cachet-url-monitor.xml<TemplateURL/>
   <Icon>https://i.imgur.com/dSBbxqj.png</Icon>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://paypal.me/ramteksolutions</DonateLink>

@@ -12,7 +12,6 @@
 Make be sure to give it some then restart the container at least once. If you want to use a custom config you need to map the path: /opt/serviio/config to your AppData install directory.</Overview>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Books MediaServer:Photos MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:23423]/console</WebUI>
-  <TemplateURL>https://github.com/ibracorp/unraid-templates/edit/master/serviio/serviio.xml<TemplateURL/>
   <Icon>https://i.imgur.com/Pcals31.png</Icon>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
