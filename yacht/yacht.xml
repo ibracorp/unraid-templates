@@ -25,8 +25,8 @@ All credits to the developers. This is only a template for the community.</Overv
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1628556409</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Description>A web interface for managing docker containers with an emphasis on templating to provide one-click deployments of dockerized applications. Think of it as a decentralized app store for servers that anyone can make packages for.&#xD;
 &#xD;
 The default login is "admin@yacht.local" and "pass". &#xD;
