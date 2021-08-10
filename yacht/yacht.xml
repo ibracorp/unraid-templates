@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Yacht</Name>
+  <Name>yacht</Name>
   <Repository>selfhostedpro/yacht</Repository>
   <Registry>https://hub.docker.com/r/selfhostedpro/yacht</Registry>
   <Network>bridge</Network>
@@ -21,10 +21,6 @@ All credits to the developers. This is only a template for the community.</Overv
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/yacht/yacht_logo_dark.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1628556409</DateInstalled>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
   <Description>A web interface for managing docker containers with an emphasis on templating to provide one-click deployments of dockerized applications. Think of it as a decentralized app store for servers that anyone can make packages for.&#xD;
@@ -57,9 +53,28 @@ All credits to the developers. This is only a template for the community.</Descr
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>admin@yacht.local</Value>
+      <Name>ADMIN_EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
   <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="WebUI Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/yacht" Mode="rw" Description="To store Yacht configuration. Default: /appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/yacht</Config>
+  <Config Name="ADMIN_EMAIL" Target="ADMIN_EMAIL" Default="admin@yacht.local" Mode="" Description="Administrator email address. Default = admin@yacht.local" Type="Variable" Display="always" Required="false" Mask="false">admin@yacht.local</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Needed to connect Yacht to Docker." Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
 </Container>
