@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Yacht</Name>
+  <Repository>selfhostedpro/yacht</Repository>
+  <Registry>https://hub.docker.com/r/selfhostedpro/yacht</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://github.com/SelfhostedPro/Yacht</Project>
+  <Overview>A web interface for managing docker containers with an emphasis on templating to provide one-click deployments of dockerized applications. Think of it as a decentralized app store for servers that anyone can make packages for.&#xD;
+&#xD;
+The default login is "admin@yacht.local" and "pass". &#xD;
+You should change this immediately by clicking on admin in the top right and then "User" then select "Change Password" in the top menu. You can also change your username using this field.&#xD;
+&#xD;
+If you need to reset your password/username to the included defaults, please delete your yacht volume and create a new one (you will lose all of your configurations so be sure to backup when you make changes).&#xD;
+&#xD;
+All credits to the developers. This is only a template for the community.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/yacht/yacht_logo_dark.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1628556409</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A web interface for managing docker containers with an emphasis on templating to provide one-click deployments of dockerized applications. Think of it as a decentralized app store for servers that anyone can make packages for.&#xD;
+&#xD;
+The default login is "admin@yacht.local" and "pass". &#xD;
+You should change this immediately by clicking on admin in the top right and then "User" then select "Change Password" in the top menu. You can also change your username using this field.&#xD;
+&#xD;
+If you need to reset your password/username to the included defaults, please delete your yacht volume and create a new one (you will lose all of your configurations so be sure to backup when you make changes).&#xD;
+&#xD;
+All credits to the developers. This is only a template for the community.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/yacht</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="8000" Default="8000" Mode="tcp" Description="WebUI Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/yacht" Mode="rw" Description="To store Yacht configuration. Default: /appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/yacht</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Needed to connect Yacht to Docker." Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
+</Container>
