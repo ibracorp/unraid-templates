@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pterodactyl-daemon</Name>
+  <Repository>ccarney16/pterodactyl-daemon:latest</Repository>
+  <Registry>https://hub.docker.com/r/ccarney16/pterodactyl-daemon</Registry>
+  <Network>proxy</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://pterodactyl.io/</Project>
+  <Overview>Pterodactyl is an open-source game server management panel built with PHP 7, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.&#xD;
+&#xD;
+Find a guide on how to get this up and running at https://docs.ibracorp.io</Overview>
+  <Category>GameServers: Network:Management</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-panel.png</Icon>
+  <ExtraParams>--privileged=true --restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1629444630</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Pterodactyl is an open-source game server management panel built with PHP 7, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.&#xD;
+&#xD;
+Find a guide on how to get this up and running at https://docs.ibracorp.io</Description>
+  <Networking>
+    <Mode>proxy</Mode>
+    <Publish>
+      <Port>
+        <HostPort>2022</HostPort>
+        <ContainerPort>2022</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8181</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/pterodactyl-node/</HostDir>
+      <ContainerDir>/etc/pterodactyl</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/pterodactyl-node/data</HostDir>
+      <ContainerDir>/mnt/user/pterodactyl-node/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/tmp/pterodactyl</HostDir>
+      <ContainerDir>/tmp/pterodactyl</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="2022" Default="2022" Mode="tcp" Description="Container Port: 2022" Type="Port" Display="always" Required="true" Mask="false">2022</Config>
+  <Config Name="Host Port 2" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8181</Config>
+  <Config Name="appdata" Target="/etc/pterodactyl" Default="/mnt/user/pterodactyl-node/" Mode="rw" Description="Container Path: /etc/pterodactyl" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pterodactyl-node/</Config>
+  <Config Name="docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Container Path: /var/run/docker.sock" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="data" Target="/mnt/user/pterodactyl-node/data" Default="/mnt/user/pterodactyl-node/data" Mode="rw" Description="Container Path: /mnt/user/pterodactyl-node/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/pterodactyl-node/data</Config>
+  <Config Name="tmp" Target="/tmp/pterodactyl" Default="/tmp/pterodactyl" Mode="rw" Description="Container Path: /tmp/pterodactyl" Type="Path" Display="always" Required="false" Mask="false">/tmp/pterodactyl</Config>
+</Container>

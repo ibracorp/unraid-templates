@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pterodactyl-panel</Name>
+  <Repository>ccarney16/pterodactyl-panel:latest</Repository>
+  <Registry>https://hub.docker.com/r/ccarney16/pterodactyl-panel/</Registry>
+  <Network>proxy</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://pterodactyl.io/</Project>
+  <Overview>Pterodactyl is an open-source game server management panel built with PHP 7, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.&#xD;
+&#xD;
+Find a guide on how to get this up and running at https://docs.ibracorp.io</Overview>
+  <Category>GameServers: Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/pterodactyl-panel.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-panel.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1629444671</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Pterodactyl is an open-source game server management panel built with PHP 7, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.&#xD;
+&#xD;
+Find a guide on how to get this up and running at https://docs.ibracorp.io</Description>
+  <Networking>
+    <Mode>proxy</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8001</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/pterodactyl-node/data</HostDir>
+      <ContainerDir>/mnt/user/pterodactyl-node/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/pterodactyl-node/</HostDir>
+      <ContainerDir>/etc/pterodactyl</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/pterodactyl/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Europe/London</Value>
+      <Name>APP_TIMEZONE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>mariadb</Value>
+      <Name>DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>DB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>pterodactyl</Value>
+      <Name>DB_DATABASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>pterodactyl</Value>
+      <Name>DB_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>pterodactyl</Value>
+      <Name>DB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>APP_DEBUG</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8001</Config>
+  <Config Name="Shared data" Target="/mnt/user/pterodactyl-node/data" Default="/mnt/user/pterodactyl-node/data" Mode="rw" Description="Container Path: /mnt/user/pterodactyl-node/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pterodactyl-node/data</Config>
+  <Config Name="Game Data" Target="/etc/pterodactyl" Default="/mnt/user/pterodactyl-node/" Mode="rw" Description="Container Path: /etc/pterodactyl" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/pterodactyl-node/</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/pterodactyl/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/</Config>
+  <Config Name="Timezone" Target="APP_TIMEZONE" Default="UTC" Mode="" Description="Timezone" Type="Variable" Display="always" Required="true" Mask="false">Europe/London</Config>
+  <Config Name="Database Hostname or IP" Target="DB_HOST" Default="mariadb" Mode="" Description="Database Hostname or IP." Type="Variable" Display="always" Required="true" Mask="false">mariadb</Config>
+  <Config Name="Database Port" Target="DB_PORT" Default="3306" Mode="" Description="Database Port" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="Database Name" Target="DB_DATABASE" Default="pterodactyl" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false">pterodactyl</Config>
+  <Config Name="Database Username" Target="DB_USERNAME" Default="pterodactyl" Mode="" Description="Database Username" Type="Variable" Display="always" Required="true" Mask="false">pterodactyl</Config>
+  <Config Name="Database Password" Target="DB_PASSWORD" Default="password" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false">pterodactyl</Config>
+  <Config Name="DEBUG" Target="APP_DEBUG" Default="false|true" Mode="" Description="APP_DEBUG" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
