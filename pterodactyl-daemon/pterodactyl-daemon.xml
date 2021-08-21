@@ -3,7 +3,7 @@
   <Name>pterodactyl-daemon</Name>
   <Repository>ccarney16/pterodactyl-daemon:latest</Repository>
   <Registry>https://hub.docker.com/r/ccarney16/pterodactyl-daemon</Registry>
-  <Network>proxy</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -16,7 +16,7 @@ Find a guide on how to get this up and running at https://docs.ibracorp.io</Over
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-panel.png</Icon>
-  <ExtraParams>--privileged=true --restart=always</ExtraParams>
+  <ExtraParams>--privileged=true --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1629444630</DateInstalled>
@@ -26,7 +26,7 @@ Find a guide on how to get this up and running at https://docs.ibracorp.io</Over
 &#xD;
 Find a guide on how to get this up and running at https://docs.ibracorp.io</Description>
   <Networking>
-    <Mode>proxy</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>2022</HostPort>
