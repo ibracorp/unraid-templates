@@ -3,7 +3,7 @@
   <Name>pterodactyl-panel</Name>
   <Repository>ccarney16/pterodactyl-panel:latest</Repository>
   <Registry>https://hub.docker.com/r/ccarney16/pterodactyl-panel/</Registry>
-  <Network>proxy</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -26,7 +26,7 @@ Find a guide on how to get this up and running at https://docs.ibracorp.io</Over
 &#xD;
 Find a guide on how to get this up and running at https://docs.ibracorp.io</Description>
   <Networking>
-    <Mode>proxy</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>8001</HostPort>
