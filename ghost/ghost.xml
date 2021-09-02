@@ -39,7 +39,7 @@
     </Variable>
     <Variable>
       <Value>user@example.com</Value>
-      <Name>GHOST_EMAIL</Name>
+      <Name>GHOST_EMAIL (used to login on https.example.com/ghost/#/signin)</Name>
       <Mode/>
     </Variable>
     <Variable>
