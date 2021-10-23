@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dockersocket</Name>
+  <Repository>ghcr.io/tecnativa/docker-socket-proxy:latest</Repository>
+  <Registry>https://hub.docker.com/r/tecnativa/docker-socket-proxy</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.com/invite/VWAG7rZ</Support>
+  <Project>https://github.com/Tecnativa/docker-socket-proxy</Project>
+  <Overview>This is a security-enhanced proxy for the Docker Socket.</Overview>
+  <Category>Security: Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/docker/docker-logo.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1634983074</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This is a security-enhanced proxy for the Docker Socket.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/var/run/docker.sock</HostDir>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1</Value>
+      <Name>CONTAINERS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>POST</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Containers" Target="CONTAINERS" Default="1" Mode="" Description="Allow access to running containers" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Post" Target="POST" Default="0" Mode="" Description="Disable access to " Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="docker.sock" Type="Path" Display="advanced" Required="true" Mask="false">/var/run/docker.sock</Config>
+</Container>
