@@ -17,9 +17,9 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1638440003</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1638488781</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>A website-based platform and API for collecting Plex user stats within a set timeframe using Tautulli. The data is displayed as a stat-summary, sort of like Spotify Wrapped. Yes, you need Tautulli to have been running beforehand and currently for this to work.</Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -31,8 +31,15 @@
       </Port>
     </Publish>
   </Networking>
-  <Data/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/plex-wrapped</HostDir>
+      <ContainerDir>/var/www/html/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Environment/>
   <Labels/>
   <Config Name="WebUI" Target="80" Default="580" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">580</Config>
+  <Config Name="Appdata" Target="/var/www/html/config" Default="/mnt/user/appdata/plex-wrapped" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/plex-wrapped</Config>
 </Container>
