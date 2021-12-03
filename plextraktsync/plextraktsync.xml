@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PlexTraktSync</Name>
+  <Repository>ghcr.io/taxel/plextraktsync:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://github.com/Taxel/PlexTraktSync</Project>
+  <Overview>This project adds a two-way-sync between trakt.tv and Plex Media Server. It requires a trakt.tv account but no Plex premium and no Trakt VIP subscriptions, unlike the Plex app provided by Trakt.&#xD;
+&#xD;
+Note: The PyTrakt API keys are not stored securely, so if you do not want to have a file containing those on your harddrive, you can not use this project.&#xD;
+&#xD;
+- Enter the console for the container.&#xD;
+- Enter 'python3 -m plextraktsync' without apostrophes to start the credential process.</Overview>
+  <Category>Tools: MediaApp:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/plex_trakt_sync/plex_trakt_sync.png</Icon>
+  <ExtraParams>-it</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638496507</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This project adds a two-way-sync between trakt.tv and Plex Media Server. It requires a trakt.tv account but no Plex premium and no Trakt VIP subscriptions, unlike the Plex app provided by Trakt.&#xD;
+&#xD;
+Note: The PyTrakt API keys are not stored securely, so if you do not want to have a file containing those on your harddrive, you can not use this project.&#xD;
+&#xD;
+- Enter the console for the container.&#xD;
+- Enter 'python3 -m plextraktsync' without apostrophes to start the credential process.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+</Container>
