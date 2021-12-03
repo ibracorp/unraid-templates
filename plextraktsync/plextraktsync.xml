@@ -22,7 +22,7 @@ Note: The PyTrakt API keys are not stored securely, so if you do not want to hav
   <ExtraParams>-it</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1638496507</DateInstalled>
+  <DateInstalled>1638496705</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>This project adds a two-way-sync between trakt.tv and Plex Media Server. It requires a trakt.tv account but no Plex premium and no Trakt VIP subscriptions, unlike the Plex app provided by Trakt.&#xD;
@@ -35,7 +35,14 @@ Note: The PyTrakt API keys are not stored securely, so if you do not want to hav
     <Mode>bridge</Mode>
     <Publish/>
   </Networking>
-  <Data/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/plextraktsync</HostDir>
+      <ContainerDir>/app/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Environment/>
   <Labels/>
+  <Config Name="Appdata" Target="/app/config" Default="/mnt/user/appdata/plextraktsync" Mode="rw" Description="Container Path: /app/config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/plextraktsync</Config>
 </Container>
