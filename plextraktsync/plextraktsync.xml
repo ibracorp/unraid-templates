@@ -22,7 +22,7 @@ Note: The PyTrakt API keys are not stored securely, so if you do not want to hav
   <ExtraParams>-it</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1638496705</DateInstalled>
+  <DateInstalled>1638501192</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>This project adds a two-way-sync between trakt.tv and Plex Media Server. It requires a trakt.tv account but no Plex premium and no Trakt VIP subscriptions, unlike the Plex app provided by Trakt.&#xD;
