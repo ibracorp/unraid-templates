@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>wrapperr</Name>
+  <Repository>aunefyren/wrapperr</Repository>
+  <Registry>https://hub.docker.com/r/aunefyren/wrapperr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://github.com/aunefyren/wrapperr</Project>
+  <Overview>A website-based platform and API for collecting Plex user stats within a set timeframe using Tautulli. The data is displayed as a stat-summary, sort of like Spotify Wrapped. Yes, you need Tautulli to have been running beforehand and currently for this to work.</Overview>
+  <Category>Productivity: Tools: MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/ibracorp/app-logos/blob/main/plex-wrapped/plex_wrapped.png?raw=true?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639537124</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A website-based platform and API for collecting Plex user stats within a set timeframe using Tautulli. The data is displayed as a stat-summary, sort of like Spotify Wrapped. Yes, you need Tautulli to have been running beforehand and currently for this to work.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>580</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/wrapperr</HostDir>
+      <ContainerDir>/var/www/html/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="WebUI" Target="80" Default="580" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">580</Config>
+  <Config Name="Appdata" Target="/var/www/html/config" Default="/mnt/user/appdata/plex-wrapped" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wrapperr</Config>
+</Container>
