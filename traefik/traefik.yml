@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Traefik</Name>
+  <Repository>traefik:2.5</Repository>
+  <Registry>https://hub.docker.com/_/traefik</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://traefik.io/</Project>
+  <Overview>The world&#x2019;s most popular cloud-native application proxy that helps developers and operations teams build, deploy and run modern microservices applications quickly and easily.&#xD;
+&#xD;
+For a guide on how to install this reverse proxy, head over to our documentation website.&#xD;
+&#xD;
+https://docs.ibracorp.io&#xD;
+&#xD;
+Come join in on the community fun and get support by joining our discord!&#xD;
+&#xD;
+https://discord.gg/VWAG7rZ</Overview>
+  <Category>Productivity: Security: Tools: Network:Proxy</Category>
+  <WebUI>http://[IP]:[PORT:8183]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/traefik/traefik/master/webui/src/assets/traefik.avatar.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1641172426</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config Folder" Target="/etc/traefik" Default="/mnt/user/appdata/traefik" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/traefik</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="https Port" Target="443" Default="44301" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">44301</Config>
+  <Config Name="http Port" Target="80" Default="8001" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+  <Config Name="Web UI Port" Target="8080" Default="8183" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8183</Config>
+  <Config Name="Cloudflare API Token" Target="CF_DNS_API_TOKEN" Default="YOUR_SUPER_SECURE_CLOUDFLARE_API_TOKEN" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">YOUR_SUPER_SECURE_CLOUDFLARE_API_TOKEN</Config>
+  <Config Name="Cloudflare Email" Target="CF_API_EMAIL" Default="YOUR@CLOUDFLARE.EMAIL" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">YOUR@CLOUDFLARE.EMAIL</Config>
+  <Config Name="Traefik Dashboard Subdomain" Target="traefik.http.routers.api.rule" Default="Host(`traefik.YOURDOMAIN.COM`)" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">Host(`traefik.YOURDOMAIN.COM`)</Config>
+  <Config Name="Traefik Entrypoint " Target="traefik.http.routers.api.entryPoints" Default="https" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https</Config>
+  <Config Name="Traefik API" Target="traefik.http.routers.api.service" Default="api@internal " Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">api@internal </Config>
+  <Config Name="Authelia Protection" Target="traefik.http.routers.api.middlewares" Default="auth@file" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">auth@file</Config>
+  <Config Name="Enable Traefik (Dashboard)" Target="traefik.enable" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
