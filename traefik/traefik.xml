@@ -26,8 +26,8 @@ https://discord.gg/VWAG7rZ</Overview>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1642253003</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>The world&#x2019;s most popular cloud-native application proxy that helps developers and operations teams build, deploy and run modern microservices applications quickly and easily.&#xD;
 &#xD;
 For a guide on how to install this reverse proxy, head over to our documentation website.&#xD;
