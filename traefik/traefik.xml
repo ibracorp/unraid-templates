@@ -93,11 +93,6 @@ https://discord.gg/VWAG7rZ</Description>
       <Mode/>
     </Label>
     <Label>
-      <Value>auth@file</Value>
-      <Name>traefik.http.routers.api.middlewares</Name>
-      <Mode/>
-    </Label>
-    <Label>
       <Value>true</Value>
       <Name>traefik.enable</Name>
       <Mode/>
@@ -112,6 +107,5 @@ https://discord.gg/VWAG7rZ</Description>
   <Config Name="Traefik Dashboard Subdomain" Target="traefik.http.routers.api.rule" Default="Host(`traefik.YOURDOMAIN.COM`)" Mode="" Description="Traefik dashboard URL" Type="Label" Display="always" Required="false" Mask="false">Host(`traefik.DOMAIN.COM`)</Config>
   <Config Name="Traefik Entrypoint " Target="traefik.http.routers.api.entryPoints" Default="https" Mode="" Description="Traefik Dashboard Entrypoint" Type="Label" Display="always" Required="false" Mask="false">https</Config>
   <Config Name="Traefik API" Target="traefik.http.routers.api.service" Default="api@internal " Mode="" Description="Routing Traefik to its API Dashboard" Type="Label" Display="always" Required="false" Mask="false">api@internal</Config>
-  <Config Name="Authelia Protection" Target="traefik.http.routers.api.middlewares" Default="auth@file" Mode="" Description="Redirecting Requests to Authelia Middleware" Type="Label" Display="always" Required="false" Mask="false">auth@file</Config>
   <Config Name="Enable Traefik (Dashboard)" Target="traefik.enable" Default="true" Mode="" Description="Enable/Disable Traefik Dashboard" Type="Label" Display="always" Required="false" Mask="false">true</Config>
 </Container>
