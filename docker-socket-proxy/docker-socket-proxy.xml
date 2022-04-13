@@ -18,8 +18,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1634983074</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>This is a security-enhanced proxy for the Docker Socket.</Description>
   <Networking>
     <Mode>bridge</Mode>
