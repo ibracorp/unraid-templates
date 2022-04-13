@@ -13,8 +13,8 @@ Make be sure to give it some then restart the container at least once. If you wa
   <Category>MediaServer:Video MediaServer:Music MediaServer:Books MediaServer:Photos MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:23423]/console</WebUI>
   <Icon>https://i.imgur.com/Pcals31.png</Icon>
-  <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Networking>
     <Mode>ibraproxy</Mode>
     <Publish>
