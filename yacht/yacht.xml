@@ -21,8 +21,8 @@ All credits to the developers. This is only a template for the community.</Overv
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/yacht/yacht_logo_dark.png</Icon>
-  <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>A web interface for managing docker containers with an emphasis on templating to provide one-click deployments of dockerized applications. Think of it as a decentralized app store for servers that anyone can make packages for.&#xD;
 &#xD;
 The default login is "admin@yacht.local" and "pass". &#xD;
