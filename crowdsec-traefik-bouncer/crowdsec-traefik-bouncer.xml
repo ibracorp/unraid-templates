@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://github.com/fbonalair/traefik-crowdsec-bouncer</Project>
-  <Overview>CrowdSec bouncer for Traefik to block malicious IPs to access your services. For this, it leverages Traefik v2 ForwardAuth middleware and queries CrowdSec with client IP. If the client IP is on the ban list, it will get an HTTP code 403 response. Otherwise, the request will continue as usual.&#xD;
+  <Overview>CrowdSec bouncer for Traefik to block malicious IPs from accessing your services. This utilizes Traefik v2 ForwardAuth Middleware and queries CrowdSec with the client IP. If the client IP is on the ban list, Traefik will issue a HTTP code 403 response. Otherwise, the request will continue as usual.&#xD;
 &#xD;
 Be sure to install CrowdSec first. See our instructions on CrowdSec here: https://docs.ibracorp.io</Overview>
   <Category>Security:</Category>
@@ -22,7 +22,7 @@ Be sure to install CrowdSec first. See our instructions on CrowdSec here: https:
   <DateInstalled>1649817725</DateInstalled>
   <DonateText>Help support our work by buying us a beer</DonateText>
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
-  <Description>CrowdSec bouncer for Traefik to block malicious IPs to access your services. For this, it leverages Traefik v2 ForwardAuth middleware and queries CrowdSec with client IP. If the client IP is on the ban list, it will get an HTTP code 403 response. Otherwise, the request will continue as usual.&#xD;
+  <Description>CrowdSec bouncer for Traefik to block malicious IPs from accessing your services. This utilizes Traefik v2 ForwardAuth Middleware and queries CrowdSec with the client IP. If the client IP is on the ban list, Traefik will issue a HTTP code 403 response. Otherwise, the request will continue as usual.&#xD;
 &#xD;
 Be sure to install CrowdSec first. See our instructions on CrowdSec here: https://docs.ibracorp.io</Description>
   <Networking>
