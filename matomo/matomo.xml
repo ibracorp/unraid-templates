@@ -12,8 +12,8 @@
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Icon>https://i.imgur.com/mRIhLHE.png</Icon>
-  <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
