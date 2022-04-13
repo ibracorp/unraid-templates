@@ -18,8 +18,8 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1639537124</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>A website-based platform and API for collecting Plex user stats within a set timeframe using Tautulli. The data is displayed as a stat-summary, sort of like Spotify Wrapped. Yes, you need Tautulli to have been running beforehand and currently for this to work.</Description>
   <Networking>
     <Mode>bridge</Mode>
