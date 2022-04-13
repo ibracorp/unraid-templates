@@ -12,8 +12,8 @@
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <Icon>https://i.imgur.com/dSBbxqj.png</Icon>
-  <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>Cachet is a beautiful and powerful open source status page system, a free replacement for services such as StatusPage.io, Status.io, and others. Docs: https://docs.cachethq.io/docs/installing-cachet</Description>
   <Networking>
     <Mode>bridge</Mode>
