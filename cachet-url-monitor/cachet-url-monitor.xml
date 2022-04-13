@@ -12,8 +12,8 @@
   <Category>Productivity: Tools:</Category>
   <WebUI/>
   <Icon>https://i.imgur.com/dSBbxqj.png</Icon>
-  <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>Python plugin for cachet that monitors an URL, verifying it's response status and latency. The frequency the URL is tested is configurable, along with the assertion applied to the request response. Check the Docker Hub link for instructions. IBRACORP video (on YouTube) will be out soon, too. </Description>
   <Networking>
     <Mode>bridge</Mode>
