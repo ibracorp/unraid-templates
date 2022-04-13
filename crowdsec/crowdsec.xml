@@ -20,7 +20,7 @@ If using Traefik, you should also install the traefik-bouncer. See our instructi
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1649817278</DateInstalled>
-  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateText>Help support our work by buying us a beer</DonateText>
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>CrowdSec is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks and share signals across the community. &#xD;
 &#xD;
