@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>crowdsec</Name>
+  <Repository>crowdsecurity/crowdsec</Repository>
+  <Registry>https://registry.hub.docker.com/r/crowdsecurity/crowdsec</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://crowdsec.net/</Project>
+  <Overview>CrowdSec is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks and share signals across the community. &#xD;
+&#xD;
+If using Traefik, you should also install the traefik-bouncer. See our instructions on CrowdSec here: https://docs.ibracorp.io</Overview>
+  <Category>Security:</Category>
+  <WebUI>http://[IP]:[PORT:8081]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/VozDeOuro/unraid-templates/master/crowdsec/crowdsec.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/crowdsec/crowdsec.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1649817278</DateInstalled>
+  <DonateText>Help support my work by buying me a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Description>CrowdSec is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks and share signals across the community. &#xD;
+&#xD;
+If using Traefik, you should also install the traefik-bouncer. See our instructions on CrowdSec here: https://docs.ibracorp.io</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8081</HostPort>
+        <ContainerPort>8081</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/crowdsec/data/</HostDir>
+      <ContainerDir>/var/lib/crowdsec/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/crowdsec/</HostDir>
+      <ContainerDir>/etc/crowdsec</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/dmz/crowdsec/auth/</HostDir>
+      <ContainerDir>/var/log/auth.log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/dmz/crowdsec/</HostDir>
+      <ContainerDir>/var/log/crowdsec</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/var/log/syslog</HostDir>
+      <ContainerDir>/syslog</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>crowdsecurity/traefik crowdsecurity/http-cve LePresidente/authelia</Value>
+      <Name>COLLECTIONS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port" Target="8081" Default="" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="false" Mask="false">8081</Config>
+  <Config Name="data" Target="/var/lib/crowdsec/data" Default="" Mode="rw" Description="Container Path: /var/lib/crowdsec/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/crowdsec/data/</Config>
+  <Config Name="appdata" Target="/etc/crowdsec" Default="" Mode="rw" Description="Container Path: /etc/crowdsec" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/crowdsec/</Config>
+  <Config Name="auth logs to analyze" Target="/var/log/auth.log" Default="" Mode="rw" Description="Container Path: /var/log/auth.log" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dmz/crowdsec/auth/</Config>
+  <Config Name="crowdsec logs to analyze" Target="/var/log/crowdsec" Default="" Mode="rw" Description="Container Path: /var/log/crowdsec" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dmz/crowdsec/</Config>
+  <Config Name="syslog path" Target="/syslog" Default="" Mode="ro" Description="Container Path: /syslog" Type="Path" Display="always" Required="false" Mask="false">/var/log/syslog</Config>
+  <Config Name="COLLECTIONS" Target="COLLECTIONS" Default="" Mode="" Description="Container Variable: COLLECTIONS" Type="Variable" Display="always" Required="false" Mask="false">crowdsecurity/traefik crowdsecurity/http-cve LePresidente/authelia</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+</Container>
