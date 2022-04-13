@@ -20,8 +20,8 @@ Find a guide on how to get this up and running at https://docs.ibracorp.io</Over
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1629444630</DateInstalled>
-  <DonateText>Help support my work by buying me a beer</DonateText>
-  <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>Pterodactyl is an open-source game server management panel built with PHP 7, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.&#xD;
 &#xD;
 Find a guide on how to get this up and running at https://docs.ibracorp.io</Description>
