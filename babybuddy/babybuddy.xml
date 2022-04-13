@@ -18,8 +18,8 @@ Full credit to the developers and LSIO for the container. I just wanted to get i
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/babybuddy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/babybuddy-logo.png</Icon>
-  <DonateText>Donations</DonateText>
-  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
