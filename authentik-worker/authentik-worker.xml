@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>authentik-worker</Name>
+  <Repository>beryju/authentik:2022.4.1</Repository>
+  <Registry>https://hub.docker.com/r/beryju/authentik/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/VWAG7rZ</Support>
+  <Project>https://github.com/goauthentik/authentik</Project>
+  <Overview>authentik is an open-source Identity Provider focused on flexibility and versatility. You can use authentik in an existing environment to add support for new protocols, implement sign-up/recovery/etc. in your application so you don't have to deal with it, and many other things.&#xD;
+&#xD;
+This is the worker. You will need the Authentik app which is the server. </Overview>
+  <Category>Security:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/authentik-worker/authentik_worker.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs>worker</PostArgs>
+  <CPUset/>
+  <DateInstalled>1649705859</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Description>authentik is an open-source Identity Provider focused on flexibility and versatility. You can use authentik in an existing environment to add support for new protocols, implement sign-up/recovery/etc. in your application so you don't have to deal with it, and many other things.&#xD;
+&#xD;
+This is the worker. You will need the Authentik app which is the server. </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/backups</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/certs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/var/run/docker.sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/templates</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>AUTHENTIK_REDIS__HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>AUTHENTIK_REDIS__PASSWORD</Name>
+      <Mode/>
+    </Variable>
+	<Variable>
+      <Value/>
+      <Name>AUTHENTIK_POSTGRESQL__HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>AUTHENTIK_POSTGRESQL__USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>AUTHENTIK_POSTGRESQL__NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>AUTHENTIK_POSTGRESQL__PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>AUTHENTIK_ERROR_REPORTING__ENABLED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>AUTHENTIK_SECRET_KEY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Redis Host" Target="AUTHENTIK_REDIS__HOST" Default="" Mode="" Description="Redis Host:" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PostgreSQL Host" Target="AUTHENTIK_POSTGRESQL__HOST" Default="" Mode="" Description="PostgreSQL Host:" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PostgreSQL DB User" Target="AUTHENTIK_POSTGRESQL__USER" Default="" Mode="" Description="PostgreSQL DB User: authentik" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PostgreSQL DB Name" Target="AUTHENTIK_POSTGRESQL__NAME" Default="" Mode="" Description="PostgreSQL DB Name: authentik" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PostgreSQL DB Password" Target="AUTHENTIK_POSTGRESQL__PASSWORD" Default="" Mode="" Description="PostgreSQL DB Password:" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Error Reporting" Target="AUTHENTIK_ERROR_REPORTING__ENABLED" Default="" Mode="" Description="Error Reporting: True or False" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Secret Key" Target="AUTHENTIK_SECRET_KEY" Default="" Mode="" Description="https://passwordsgenerator.net/ - SAME AS THE AUTHENTIK SERVER" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backups" Target="/backups" Default="" Mode="rw" Description="Container Path: /backups" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Media" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Certs" Target="/certs" Default="" Mode="rw" Description="Container Path: /certs" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="" Mode="rw" Description="Container Path: /var/run/docker.sock" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Custom Templates" Target="/templates" Default="" Mode="rw" Description="Container Path: /templates" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Redis Password" Target="AUTHENTIK_REDIS__PASSWORD" Default="" Mode="" Description="Container Variable: AUTHENTIK_REDIS__PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
