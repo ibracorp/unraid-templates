@@ -13,7 +13,7 @@
 &#xD;
 If using Traefik, you should also install the traefik-bouncer. See our instructions on CrowdSec here: https://docs.ibracorp.io</Overview>
   <Category>Security:</Category>
-  <WebUI>http://[IP]:[PORT:8081]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/VozDeOuro/unraid-templates/master/crowdsec/crowdsec.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/crowdsec/crowdsec.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
@@ -29,8 +29,8 @@ If using Traefik, you should also install the traefik-bouncer. See our instructi
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8081</HostPort>
-        <ContainerPort>8081</ContainerPort>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -80,7 +80,7 @@ If using Traefik, you should also install the traefik-bouncer. See our instructi
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Port" Target="8081" Default="" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="false" Mask="false">8081</Config>
+  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8081</Config>
   <Config Name="data" Target="/var/lib/crowdsec/data" Default="" Mode="rw" Description="Container Path: /var/lib/crowdsec/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/crowdsec/data/</Config>
   <Config Name="appdata" Target="/etc/crowdsec" Default="" Mode="rw" Description="Container Path: /etc/crowdsec" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/crowdsec/</Config>
   <Config Name="auth logs to analyze" Target="/var/log/auth.log" Default="" Mode="rw" Description="Container Path: /var/log/auth.log" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/dmz/crowdsec/auth/</Config>
