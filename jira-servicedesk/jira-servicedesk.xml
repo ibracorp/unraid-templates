@@ -45,7 +45,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8585]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <Icon>https://i.imgur.com/rNMse7m.png</Icon>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://bit.ly/3r3Ntg2</DonateLink>
