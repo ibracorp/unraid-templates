@@ -10,7 +10,7 @@
   <Project>https://github.com/pwm-project/pwm</Project>
   <Overview>PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.</Overview>
   <Category>Security:</Category>
-  <WebUI>http://[IP]:[PORT:8282]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/pwm/pwm.xml</TemplateURL>
   <Icon>https://i.imgur.com/dAMqu51.png</Icon>
   <DonateText>Help support our work by buying us a beer</DonateText>

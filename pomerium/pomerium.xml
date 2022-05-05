@@ -10,7 +10,7 @@
   <Project>https://github.com/pomerium/pomerium</Project>
   <Overview>Pomerium is an identity-aware proxy that enables secure access to internal applications. Pomerium provides a standardized interface to add access control to applications regardless of whether the application itself has authorization or authentication baked-in. Pomerium gateways both internal and external requests, and can be used in situations where you'd typically reach for a VPN. Check ports to ensure you do not have conflicts. **NOTE** You MUST: 1.Create a config.yaml file in appdata/pomerium/pomerium. The parameters for the file can be found here: https://www.pomerium.io/reference/ 2. Match your cookie secret in both the file and the variable below.</Overview>
   <Category>Productivity: Security:</Category>
-  <WebUI>http://[IP]:[PORT:180]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Icon>https://i.imgur.com/oF39h9B.png</Icon>
   <DonateText>Help support my work by buying me a beer</DonateText>
   <DonateLink>https://paypal.me/ramteksolutions</DonateLink>
