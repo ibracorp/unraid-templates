@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>authentik-worker</Name>
-  <Repository>beryju/authentik:2022.4.1</Repository>
+  <Repository>beryju/authentik:2022.5.2</Repository>
   <Registry>https://hub.docker.com/r/beryju/authentik/</Registry>
   <Network>bridge</Network>
   <MyIP/>
