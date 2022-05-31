@@ -19,7 +19,7 @@ Find a guide on how to get this up and running at https://docs.ibracorp.io</Over
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1629444671</DateInstalled>
+  <DateInstalled>1654000722</DateInstalled>
   <DonateText>Help support our work by buying us a beer</DonateText>
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>Pterodactyl is an open-source game server management panel built with PHP 7, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.&#xD;
@@ -84,6 +84,11 @@ Find a guide on how to get this up and running at https://docs.ibracorp.io</Desc
       <Mode/>
     </Variable>
     <Variable>
+      <Value>Redis</Value>
+      <Name>REDIS_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
       <Value>false</Value>
       <Name>APP_DEBUG</Name>
       <Mode/>
@@ -100,5 +105,6 @@ Find a guide on how to get this up and running at https://docs.ibracorp.io</Desc
   <Config Name="Database Name" Target="DB_DATABASE" Default="pterodactyl" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false">pterodactyl</Config>
   <Config Name="Database Username" Target="DB_USERNAME" Default="pterodactyl" Mode="" Description="Database Username" Type="Variable" Display="always" Required="true" Mask="false">pterodactyl</Config>
   <Config Name="Database Password" Target="DB_PASSWORD" Default="password" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false">pterodactyl</Config>
+  <Config Name="Redis Hostname or IP" Target="REDIS_HOST" Default="Redis" Mode="" Description="Redis Hostname or IP." Type="Variable" Display="always" Required="true" Mask="false">Redis</Config>
   <Config Name="DEBUG" Target="APP_DEBUG" Default="false|true" Mode="" Description="APP_DEBUG" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
 </Container>
