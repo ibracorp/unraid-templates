@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>quant-ux-frontend</Name>
+  <Repository>bmcgonag/qux-fe</Repository>
+  <Registry>https://hub.docker.com/r/bmcgonag/qux-fe/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/KlausSchaefers/quant-ux</Support>
+  <Project>https://github.com/KlausSchaefers/quant-ux</Project>
+  <Overview>Front End for the Quant UX Project.&#xD;
+&#xD;
+Quant UX is a research, usability and prototyping tool to quickly test your designs and get data driven insights. &#xD;
+&#xD;
+You will need the quant-ux-backend for this to work.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8082]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/jjSgyHO.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1654538645</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="8082" Default="8082" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8082</Config>
+  <Config Name="Quant UX Backend" Target="QUX_PROXY_URL" Default="http://server-ip:8383" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://server-ip:8383</Config>
+</Container>

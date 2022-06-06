@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>quant-ux-backend</Name>
+  <Repository>bmcgonag/qux-be</Repository>
+  <Registry>https://hub.docker.com/r/bmcgonag/qux-be</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/KlausSchaefers/quant-ux</Support>
+  <Project>https://github.com/KlausSchaefers/quant-ux</Project>
+  <Overview>Quant UX is a research, usability and prototyping tool to quickly test your designs and get data driven insights. &#xD;
+&#xD;
+You will need the quant-ux-frontend for this to work.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/R83G3Tg.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1654539137</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="QUX_HTTP_HOST" Target="QUX_HTTP_HOST" Default="http://quant-ux-frontend:8082" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://server-ip:8082</Config>
+  <Config Name="QUX_HTTP_PORT" Target="8080" Default="8383" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8383</Config>
+  <Config Name="QUX_MONGO_DB_NAME" Target="QUX_MONGO_DB_NAME" Default="quantux" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">quantux</Config>
+  <Config Name="QUX_MONGO_TABLE_PREFIX" Target="QUX_MONGO_TABLE_PREFIX" Default="quantux" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">quantux</Config>
+  <Config Name="QUX_MONGO_CONNECTION_STRING" Target="QUX_MONGO_CONNECTION_STRING" Default="mongodb://quant-ux-mongo:27017 " Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">mongodb://server-ip:27017</Config>
+  <Config Name="QUX_MAIL_USER" Target="QUX_MAIL_USER" Default="mail_admin@example.com  " Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="QUX_MAIL_PASSWORD" Target="QUX_MAIL_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="QUX_MAIL_HOST" Target="QUX_MAIL_HOST" Default="mail.example.com  " Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="QUX_IMAGE_FOLDER_USER" Target="QUX_IMAGE_FOLDER_USER" Default="/qux-images " Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/qux-images </Config>
+  <Config Name="QUX_JWT_PASSWORD" Target="QUX_JWT_PASSWORD" Default="" Mode="" Description="https://passwordsgenerator.net/" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="QUX_IMAGE_FOLDER_APPS" Target="QUX_IMAGE_FOLDER_APPS" Default="/qux-image-apps" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/qux-image-apps</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
+</Container>
