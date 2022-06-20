@@ -16,7 +16,7 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <WebUI>http://[IP]:[PORT:9091]/</WebUI>
-  <Icon>https://i.imgur.com/DCn2yiv.png</Icon>
+  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/authelia/authelia.png</Icon>
   <DonateText>Help support our work by buying us a beer</DonateText>
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Networking>
