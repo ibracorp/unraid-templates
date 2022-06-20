@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jellyseerr</Name>
+  <Repository>fallenbagel/jellyseerr:latest</Repository>
+  <Registry>https://hub.docker.com/r/fallenbagel/jellyseerr/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Fallenbagel/jellyseerr/issues</Support>
+  <Project>https://github.com/Fallenbagel/jellyseerr</Project>
+  <Overview>Jellyseerr is a free and open source fork of Overseerr for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Jellyfin!&#xD;
+&#xD;
+https://hub.docker.com/r/fallenbagel/jellyseerr/</Overview>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:5056]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/xWeegix/templates/master/jellyseerr_template.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Fallenbagel/jellyseerr/main/public/android-chrome-512x512.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1655767108</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="Network" Target="5055" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5056</Config>
+  <Config Name="Appdata" Target="/app/config/" Default="/mnt/user/appdata/Jellyseerr" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Jellyseerr</Config>
+  <Config Name="Log" Target="LOG_LEVEL" Default="debug" Mode="" Description="Log verbosity." Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">022</Config>
+</Container>
