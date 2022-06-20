@@ -14,7 +14,6 @@
 https://hub.docker.com/r/fallenbagel/jellyseerr/</Overview>
   <Category>Downloaders: MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:5056]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/xWeegix/templates/master/jellyseerr_template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/jellyseerr/jellyseerr.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
