@@ -32,7 +32,7 @@ To enable Emby support please add the variable 'JELLYFIN_TYPE=emby' in the templ
 This project is constantly updating with new features and bug fixes. See the GitHub page for current and developing features!&#xD;
 https://github.com/Fallenbagel/jellyseerr/</Description>
   <Networking>
-    <Mode>ibraproxy</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>5055</HostPort>
