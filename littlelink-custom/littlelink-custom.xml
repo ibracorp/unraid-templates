@@ -18,7 +18,7 @@ Default login:&#xD;
 admin@admin.com&#xD;
 12345678</Overview>
   <Category>Productivity: Tools:</Category>
-  <WebUI>http://[IP]:[PORT:2880]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://i.imgur.com/TDBI5Ut.jpg</Icon>
   <ExtraParams/>
