@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>littlelink-custom</Name>
-  <Repository>julianprieber/littlelink-custom:latest</Repository>
+  <Repository>julianprieber/littlelink-custom:v2.7.4</Repository>
   <Registry>https://hub.docker.com/r/julianprieber/littlelink-custom/</Registry>
   <Network>bridge</Network>
   <MyIP/>
