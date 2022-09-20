@@ -3,28 +3,83 @@
   <Name>jellyseerr</Name>
   <Repository>fallenbagel/jellyseerr:latest</Repository>
   <Registry>https://hub.docker.com/r/fallenbagel/jellyseerr/</Registry>
-  <Network>bridge</Network>
+  <Network>ibraproxy</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/Fallenbagel/jellyseerr/issues</Support>
+  <Support>https://discord.gg/VWAG7rZ</Support>
   <Project>https://github.com/Fallenbagel/jellyseerr</Project>
-  <Overview>Jellyseerr is a free and open source fork of Overseerr for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Jellyfin!&#xD;
+  <Overview>Jellyseerr is a free and open-source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin &amp;amp; Emby media servers!&#xD;
 &#xD;
-https://hub.docker.com/r/fallenbagel/jellyseerr/</Overview>
+To enable Emby support please add the variable 'JELLYFIN_TYPE=emby' in the template.&#xD;
+&#xD;
+This project is constantly updating with new features and bug fixes. See the GitHub page for current and developing features!&#xD;
+https://github.com/Fallenbagel/jellyseerr/</Overview>
   <Category>Downloaders: MediaApp:Video</Category>
-  <WebUI>http://[IP]:[PORT:5056]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/jellyseerr/jellyseerr.png</Icon>
+  <WebUI>http://[IP]:[PORT:5055]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/xWeegix/templates/master/jellyseerr_template.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Fallenbagel/jellyseerr/main/public/android-chrome-512x512.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1655767108</DateInstalled>
+  <DateInstalled>1655792640</DateInstalled>
   <DonateText>Help support our work by buying us a beer</DonateText>
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
-  <Requires/>
-  <Config Name="Network" Target="5055" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5056</Config>
-  <Config Name="Appdata" Target="/app/config/" Default="/mnt/user/appdata/Jellyseerr" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Jellyseerr</Config>
+  <Description>Jellyseerr is a free and open-source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin &amp;amp; Emby media servers!&#xD;
+&#xD;
+To enable Emby support please add the variable 'JELLYFIN_TYPE=emby' in the template.&#xD;
+&#xD;
+This project is constantly updating with new features and bug fixes. See the GitHub page for current and developing features!&#xD;
+https://github.com/Fallenbagel/jellyseerr/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5055</HostPort>
+        <ContainerPort>5055</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/jellyseerr</HostDir>
+      <ContainerDir>/app/config/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>info</Value>
+      <Name>LOG_LEVEL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>emby</Value>
+      <Name>JELLYFIN_TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>022</Value>
+      <Name>UMASK</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Network" Target="5055" Default="5055" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">5055</Config>
+  <Config Name="Appdata" Target="/app/config/" Default="/mnt/user/appdata/Jellyseerr" Mode="rw" Description="Appdata directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyseerr</Config>
   <Config Name="Log" Target="LOG_LEVEL" Default="debug" Mode="" Description="Log verbosity." Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+  <Config Name="Emby Users" Target="JELLYFIN_TYPE" Default="" Mode="" Description="If using Emby, enter " Type="Variable" Display="always" Required="true" Mask="false">emby</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">022</Config>
