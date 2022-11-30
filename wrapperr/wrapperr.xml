@@ -11,7 +11,7 @@
   <Project>https://github.com/aunefyren/wrapperr</Project>
   <Overview>A website-based platform and API for collecting Plex user stats within a set timeframe using Tautulli. The data is displayed as a stat-summary, sort of like Spotify Wrapped. Yes, you need Tautulli to have been running beforehand and currently for this to work.</Overview>
   <Category>Productivity: Tools: MediaApp:Other</Category>
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8282]/</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/ibracorp/app-logos/blob/main/plex-wrapped/plex_wrapped.png?raw=true?raw=true</Icon>
   <ExtraParams/>
@@ -25,8 +25,8 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>580</HostPort>
-        <ContainerPort>80</ContainerPort>
+        <HostPort>8282</HostPort>
+        <ContainerPort>8282</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -34,12 +34,12 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/wrapperr</HostDir>
-      <ContainerDir>/var/www/html/config</ContainerDir>
+      <ContainerDir>/app/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="WebUI" Target="80" Default="580" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">580</Config>
-  <Config Name="Appdata" Target="/var/www/html/config" Default="/mnt/user/appdata/plex-wrapped" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wrapperr</Config>
+  <Config Name="WebUI" Target="8282" Default="8282" Mode="tcp" Description="Container Port: 8282" Type="Port" Display="always" Required="true" Mask="false">8282</Config>
+  <Config Name="Appdata" Target="/app/config" Default="/mnt/user/appdata/plex-wrapped" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wrapperr</Config>
 </Container>
