@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>traefik</Name>
-  <Repository>traefik:2.6</Repository>
+  <Repository>traefik:latest</Repository>
   <Registry>https://hub.docker.com/_/traefik</Registry>
   <Network>bridge</Network>
   <MyIP/>
