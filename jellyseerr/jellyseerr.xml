@@ -26,6 +26,7 @@ https://github.com/Fallenbagel/jellyseerr/</Overview>
   <DonateText>Help support our work by buying us a beer</DonateText>
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Description>Jellyseerr is a free and open-source software application for managing requests for your media library. It is a fork of Overseerr built to bring support for Jellyfin &amp;amp; Emby media servers!&#xD;
+    media servers!&#xD;
 &#xD;
 To enable Emby support please add the variable 'JELLYFIN_TYPE=emby' in the template.&#xD;
 &#xD;
@@ -55,7 +56,7 @@ https://github.com/Fallenbagel/jellyseerr/</Description>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>emby</Value>
+      <Value></Value>
       <Name>JELLYFIN_TYPE</Name>
       <Mode/>
     </Variable>
@@ -79,7 +80,7 @@ https://github.com/Fallenbagel/jellyseerr/</Description>
   <Config Name="Network" Target="5055" Default="5055" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="false">5055</Config>
   <Config Name="Appdata" Target="/app/config/" Default="/mnt/user/appdata/Jellyseerr" Mode="rw" Description="Appdata directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyseerr</Config>
   <Config Name="Log" Target="LOG_LEVEL" Default="debug" Mode="" Description="Log verbosity." Type="Variable" Display="always" Required="false" Mask="false">info</Config>
-  <Config Name="Emby Users" Target="JELLYFIN_TYPE" Default="" Mode="" Description="If using Emby, enter " Type="Variable" Display="always" Required="true" Mask="false">emby</Config>
+  <Config Name="Emby Support" Target="JELLYFIN_TYPE" Default="" Mode="" Description="Emby users need to fill 'emby' to enable emby support! Enabling emby support will cause problems with Plex and make Jellyfin unavailable." Type="Variable" Display="always" Required="true" Mask="false">emby</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">022</Config>
