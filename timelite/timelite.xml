@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>timelite</Name>
+  <Repository>pyguy/timelite</Repository>
+  <Registry>https://hub.docker.com/r/pyguy/timelite/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/overshard/timelite</Support>
+  <Project>https://github.com/overshard/timelite</Project>
+  <Overview>Timelite is a Node.js application designed to help individuals and teams track their time spent on different tasks and projects. It provides a simple and intuitive interface for users to create projects, add tasks, and start and stop timers to track their work. &#xD;
+</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8008]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/overshard/timelite/master/public/static/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1679006352</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Node Version" Target="NODE_VERSION" Default="14.4.0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">14.4.0</Config>
+  <Config Name="Yarn Version" Target="YARN_VERSION" Default="1.22.4" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1.22.4</Config>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8008</Config>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/timelite</Config>
+</Container>
