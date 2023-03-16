@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>databag</Name>
+  <Repository>balzack/databag</Repository>
+  <Registry>https://hub.docker.com/r/balzack/databag/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/balzack/databag/discussions</Support>
+  <Project>https://github.com/balzack/databag</Project>
+  <Overview>Databag is a federated chat app that focuses on user privacy and security. It allows users to communicate with each other in real-time, while keeping their conversations private and secure from third-party surveillance.&#xD;
+&#xD;
+https://hub.docker.com/r/balzack/databag/</Overview>
+  <Category>Productivity: Other:</Category>
+  <WebUI>http://[IP]:[PORT:7000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/balzack/databag/main/doc/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1678983834</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Port 1" Target="7000" Default="7000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7000</Config>
+  <Config Name="Config" Target="/var/lib/databag" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/databag</Config>
+  <Config Name="Password" Target="ADMIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
