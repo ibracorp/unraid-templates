@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>timetagger</Name>
+  <Repository>ghcr.io/almarklein/timetagger</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/almarklein/timetagger/issues</Support>
+  <Project>https://timetagger.app/</Project>
+  <Overview>Tag your time, get the insight - An open source time-tracker with an interactive user experience and powerful reporting.&#xD;
+&#xD;
+Use https://timetagger.app/cred to generate your credentials you will use to log in to timetagger. You can add multiple users this way (separated by commas).</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8089]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/kQTshW1.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1680968586</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8089</Config>
+  <Config Name="Config" Target="/root/_timetagger" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/timetagger</Config>
+  <Config Name="TIMETAGGER_BIND" Target="TIMETAGGER_BIND" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0:80</Config>
+  <Config Name="TIMETAGGER_DATADIR" Target="TIMETAGGER_DATADIR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/root/_timetagger</Config>
+  <Config Name="TIMETAGGER_LOG_LEVEL" Target="TIMETAGGER_LOG_LEVEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+  <Config Name="TIMETAGGER_CREDENTIALS" Target="TIMETAGGER_CREDENTIALS" Default="" Mode="" Description="Use https://timetagger.app/cred to generate your credentials you will use to log in to timetagger. You can add multiple users this way (separated by commas)." Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
