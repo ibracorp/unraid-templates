@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>kimai</Name>
+  <Repository>kimai/kimai2:apache</Repository>
+  <Registry>https://hub.docker.com/r/kimai/kimai2</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/kimai/kimai/issues</Support>
+  <Project>https://github.com/kimai/kimai</Project>
+  <Overview>Kimai is a professional grade time-tracking application, free and open-source. It handles use-cases of freelancers as well as companies with dozens or hundreds of users.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8001]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/DoNMEmy.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1680970850</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="8001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/kimai</Config>
+  <Config Name="TRUSTED_HOSTS" Target="TRUSTED_HOSTS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ADMINMAIL" Target="ADMINMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ADMINPASS" Target="ADMINPASS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="mysql://kimai:kimai@192.168.68.141:3306/kimai" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
