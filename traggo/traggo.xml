@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>traggo</Name>
+  <Repository>traggo/server:latest</Repository>
+  <Registry>https://hub.docker.com/r/traggo/server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/traggo/server/issues</Support>
+  <Project>https://traggo.net/</Project>
+  <Overview>Traggo is a tag-based time tracking tool. In Traggo there are no tasks, only tagged time spans</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3030]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/vPp0P8W.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1681166345</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="3030" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3030</Config>
+  <Config Name="Config" Target="/opt/traggo/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/traggo</Config>
+  <Config Name="TRAGGO_DEFAULT_USER_NAME" Target="TRAGGO_DEFAULT_USER_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="TRAGGO_DEFAULT_USER_PASS" Target="TRAGGO_DEFAULT_USER_PASS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
