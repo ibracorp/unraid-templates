@@ -12,7 +12,7 @@
   <Overview>Timelite is a Node.js application designed to help individuals and teams track their time spent on different tasks and projects. It provides a simple and intuitive interface for users to create projects, add tasks, and start and stop timers to track their work. &#xD;
 </Overview>
   <Category>Productivity: Tools:</Category>
-  <WebUI>http://[IP]:[PORT:8008]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/overshard/timelite/master/public/static/logo.png</Icon>
   <ExtraParams/>
