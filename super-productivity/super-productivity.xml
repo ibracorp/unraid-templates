@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>super-productivity</Name>
+  <Repository>johannesjo/super-productivity:latest</Repository>
+  <Registry>https://hub.docker.com/r/johannesjo/super-productivity</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/johannesjo/super-productivity/issues</Support>
+  <Project>https://super-productivity.com/</Project>
+  <Overview>Organize your daily tasks in one place while making time tracking a lot less annoying. Super Productivity is a ToDo List / Time Tracker / Personal Jira Task Manager for Linux, MacOS and Windows aimed at reducing the time you spend with repetitive tasks and to provide you with a place to collect all the information you need to do your job.&#xD;
+&#xD;
+Apps available for Appstore and Playstore</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/hjKGyip.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1681167448</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8011</Config>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/super-productivity</Config>
+</Container>
