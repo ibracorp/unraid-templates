@@ -13,7 +13,7 @@
 &#xD;
 Use https://timetagger.app/cred to generate your credentials you will use to log in to timetagger. You can add multiple users this way (separated by commas).</Overview>
   <Category>Productivity: Tools:</Category>
-  <WebUI>http://[IP]:[PORT:8089]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://i.imgur.com/kQTshW1.png</Icon>
   <ExtraParams/>
