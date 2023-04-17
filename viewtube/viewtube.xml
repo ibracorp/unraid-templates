@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>viewtube</Name>
+  <Repository>mauriceo/viewtube</Repository>
+  <Registry>https://hub.docker.com/r/mauriceo/viewtube/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/mauriceo/viewtube/</Support>
+  <Project>https://viewtube.io</Project>
+  <Overview>ViewTube is a self-hostable frontend for YouTube.&#xD;
+&#xD;
+&#xD;
+https://hub.docker.com/r/mauriceo/viewtube/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8066]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/lvFTgAe.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1681708710</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8066" Default="8066" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8066</Config>
+  <Config Name="Container Variable 4" Target="VIEWTUBE_BASE_DIR" Default="/home/app" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/home/app</Config>
+  <Config Name="VIEWTUBE_API_URL" Target="VIEWTUBE_API_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://api.viewtube.io/</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/viewtube</Config>
+  <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/localtime</Config>
+  <Config Name="VIEWTUBE_DATABASE_HOST" Target="VIEWTUBE_DATABASE_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">mongodb</Config>
+  <Config Name="VIEWTUBE_REDIS_HOST" Target="VIEWTUBE_REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">redis</Config>
+  <Config Name="VIEWTUBE_CORS_ORIGIN" Target="VIEWTUBE_CORS_ORIGIN" Default="" Mode="" Description="Domains that are allowed to access the resources served by ViewTube. For example https://app.domain.com" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
