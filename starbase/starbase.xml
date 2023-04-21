@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>starbase</Name>
+  <Repository>jordanroher/starbase-80</Repository>
+  <Registry>https://hub.docker.com/r/jordanroher/starbase-80</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/notclickable-jordan/starbase-80</Project>
+  <Overview>A nice looking homepage for Docker containers or any services and links.&#xD;
+&#xD;
+Create a config.json file in the app data location, then copy and paste the following from https://github.com/notclickable-jordan/starbase-80/blob/main/config.json.sample&#xD;
+&#xD;
+Modify per your requirements</Overview>
+  <Category>Productivity: Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:4173]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/dMTz5iU.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1682096555</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="4173" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4173</Config>
+  <Config Name="TITLE" Target="TITLE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Config" Target="/app/src/config.json" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/starbase/config.json</Config>
+  <Config Name="Favicon" Target="/app/public/favicon.ico" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/starbase/fav.ico</Config>
+  <Config Name="Logo" Target="/app/public/logo.png" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/starbase/logo.png</Config>
+  <Config Name="Icons" Target="/app/public/icons" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/starbase/icons</Config>
+</Container>
