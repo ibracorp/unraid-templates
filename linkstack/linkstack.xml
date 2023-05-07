@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>linkstack</Name>
+  <Repository>linkstackorg/linkstack:unraid</Repository>
+  <Registry>https://hub.docker.com/r/linkstackorg/linkstack</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/PtQswUmb</Support>
+  <Project>https://linkstack.org/</Project>
+  <Overview>Self-hosted open-source Linktree alternative&#xD;
+&#xD;
+LinkStack is a highly customizable link sharing platform with an intuitive, easy to use user interface.&#xD;
+&#xD;
+&#xD;
+</Overview>
+  <Category>Productivity: Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:2880]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/littlelink-custom/littlelink-custom.xml</TemplateURL>
+  <Icon>https://i.imgur.com/qdL82EK.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683493499</DateInstalled>
+  <DonateText>If you like our work please consider Donating.</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="ServerName" Target="HTTP_SERVER_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">link.EXAMPLE.COM</Config>
+  <Config Name="HTTPS" Target="HTTPS_SERVER_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">link.EXAMPLE.COM</Config>
+  <Config Name="Admin" Target="SERVER_ADMIN" Default="" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false"/>
+  <Config Name="TimeZone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
+  <Config Name="PHP Mmory" Target="PHP_MEMORY_LIMIT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">512M</Config>
+  <Config Name="HTTP Port " Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">2880</Config>
+  <Config Name="HTTPS Port" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">28443</Config>
+</Container>
