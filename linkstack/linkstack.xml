@@ -16,7 +16,7 @@ LinkStack is a highly customizable link sharing platform with an intuitive, easy
 &#xD;
 </Overview>
   <Category>Productivity: Tools:Utilities</Category>
-  <WebUI>http://[IP]:[PORT:2880]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/littlelink-custom/littlelink-custom.xml</TemplateURL>
   <Icon>https://i.imgur.com/qdL82EK.png</Icon>
   <ExtraParams/>
