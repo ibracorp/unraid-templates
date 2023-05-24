@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>beatbump</Name>
-  <Repository>martadinata666/beatbump:git</Repository>
-  <Registry>https://hub.docker.com/r/martadinata666/beatbump</Registry>
+  <Repository>snuffydev/beatbump:latest</Repository>
+  <Registry>https://hub.docker.com/r/snuffydev/beatbump</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://github.com/snuffyDev/Beatbump/issues</Support>
   <Project>https://beatbump.io/home</Project>
   <Overview>Beatbump is a fully-featured music listening experience, while helping to ease your privacy concerns associated with other platforms.</Overview>
   <Category>MediaApp:Music MediaServer:Music</Category>
@@ -17,9 +17,9 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1684887538</DateInstalled>
-  <DonateText>Help support our work by buying us a beer</DonateText>
-  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <DateInstalled>1684956974</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
   <Requires/>
   <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">17000</Config>
 </Container>
