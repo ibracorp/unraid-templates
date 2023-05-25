@@ -16,7 +16,7 @@ This is the worker. You will need the Authentik app which is the server. </Overv
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ibracorp/app-logos/main/authentik-worker/authentik_worker.png</Icon>
-  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <ExtraParams>--restart unless-stopped -u root</ExtraParams>
   <PostArgs>worker</PostArgs>
   <CPUset/>
   <DateInstalled>1649705859</DateInstalled>
