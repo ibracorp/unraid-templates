@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>casdoor</Name>
+  <Repository>casbin/casdoor:latest</Repository>
+  <Registry>https://hub.docker.com/r/casbin/casdoor</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.com/invite/qteNGWt8UY</Support>
+  <Project>https://casdoor.org/</Project>
+  <Overview>Casdoor is an open-source, multi-tenant, and cloud-native identity and access management (IAM) solution. It provides a user-friendly interface for managing user authentication and authorization in various applications and systems&#xD;
+&#xD;
+&#xD;
+Create a app.conf file in the same appdata/casdoor directory, then copy app.conf from https://github.com/casdoor/casdoor/blob/master/conf/app.conf and edit accordingly&#xD;
+&#xD;
+&#xD;
+default login:&#xD;
+admin&#xD;
+123</Overview>
+  <Category>Productivity: Security:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/ZtDhiyt.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1685073253</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Config" Target="/conf" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/casdoor/</Config>
+</Container>
