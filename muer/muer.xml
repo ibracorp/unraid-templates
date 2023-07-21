@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>muer</Name>
+  <Repository>muerorg/muer</Repository>
+  <Registry>https://hub.docker.com/r/muerorg/muer</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/muer-org/muer/issues</Support>
+  <Project>https://github.com/muer-org/muer</Project>
+  <Overview>Muer is a modern, open-source music player for you and your friends.&#xD;
+&#xD;
+Features:&#xD;
+&#xD;
+Beautiful UI/UX&#xD;
+Music from Youtube&#xD;
+Self-hosted&#xD;
+Default fallback to Youtube embedded player&#xD;
+&#xD;
+Muer is based on Invidious.</Overview>
+  <Category>Tools: MediaApp:Music MediaServer:Music</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/muer-org/muer/blob/main/public/icon.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1689968936</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+</Container>
