@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>slash</Name>
+  <Repository>stevenlgtm/slash:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/boojack/slash/issues</Support>
+  <Project>https://github.com/boojack/slash</Project>
+  <Overview>Slash is a bookmarking and short link service that allows you to save and share links easily. &#xD;
+It lets you store and categorize links, generate short URLs for easy sharing, search and filter your saved links, and access them from any device.&#xD;
+&#xD;
+Features&#xD;
+Create customizable /s/ short links for any URL.&#xD;
+Share short links privately or with others.&#xD;
+View analytics on short link traffic and sources.&#xD;
+Open source self-hosted solution.&#xD;
+&#xD;
+This project is under active development.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5231]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/boojack/slash/blob/main/resources/logo.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1690042049</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="5231" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5231</Config>
+  <Config Name="Config" Target="/var/opt/slash" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/slash</Config>
+</Container>
