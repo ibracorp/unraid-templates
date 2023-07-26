@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>docuseal</Name>
+  <Repository>docuseal/docuseal</Repository>
+  <Registry>https://hub.docker.com/r/docuseal/docuseal</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/docusealco/docuseal/issues</Support>
+  <Project>https://www.docuseal.co/</Project>
+  <Overview>DocuSeal is an open source platform that provides secure and efficient digital document signing and processing. &#xD;
+&#xD;
+Create PDF forms to have them filled and signed online on any device with an easy-to-use, mobile-optimized web tool.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/docusealco/docuseal/blob/master/public/favicon-96x96.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1690402261</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Config" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docuseal</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgresql://postgres:postgres@localhost:5432/docuseal</Config>
+  <Config Name="FORCE_SSL" Target="FORCE_SSL" Default="true" Mode="" Description="true or false" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
