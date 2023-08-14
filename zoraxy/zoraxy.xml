@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>zoraxy</Name>
+  <Repository>passivelemon/zoraxy-docker:latest</Repository>
+  <Registry>https://hub.docker.com/r/passivelemon/zoraxy-docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/tobychui/zoraxy/tree/main</Support>
+  <Project>https://github.com/tobychui/zoraxy/tree/main</Project>
+  <Overview>General purpose request (reverse) proxy and forwarding tool for low power devices. Now written in Go!</Overview>
+  <Category>Security: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/JIHBlTd.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1692053189</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="HTTP" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8801</Config>
+  <Config Name="HTTPS" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4431</Config>
+  <Config Name="WebUI" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8002</Config>
+  <Config Name="Config" Target="/zoraxy/config/ " Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/zoraxy</Config>
+</Container>
