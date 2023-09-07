@@ -25,7 +25,7 @@ Use micro-surveys to target the right users at the right time without making sur
   <Requires/>
   <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3006</Config>
   <Config Name="Container Variable 3" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="You can use: `openssl rand -base64 32` to generate one" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">postgresql://postgres:postgres@postgres:5432/formbrick</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="postgresql://USER:PASSWORD@HOSTNAME:PORT/DB_NAME" Type="Variable" Display="always" Required="true" Mask="false">postgresql://postgres:postgres@postgres:5432/formbrick</Config>
   <Config Name="NEXT_PUBLIC_WEBAPP_URL" Target="NEXT_PUBLIC_WEBAPP_URL" Default="" Mode="" Description="https://formbricks.domain.com" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="NEXTAUTH_URL" Target="NEXTAUTH_URL" Default="" Mode="" Description="http://SERVER-IP:3006" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="MAIL_FROM" Target="MAIL_FROM" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
