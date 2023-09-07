@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>formbricks</Name>
+  <Repository>formbricks/formbricks</Repository>
+  <Registry>https://hub.docker.com/r/formbricks/formbricks/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/formbricks/formbricks/issues</Support>
+  <Project>https://formbricks.com/</Project>
+  <Overview>Formbricks is your go-to solution for in-product micro-surveys that will supercharge your product experience. &#xD;
+&#xD;
+Use micro-surveys to target the right users at the right time without making surveys annoying.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/4XxnmqB.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1694112273</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3006</Config>
+  <Config Name="Container Variable 3" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="You can use: `openssl rand -base64 32` to generate one" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">postgresql://postgres:postgres@postgres:5432/formbrick</Config>
+  <Config Name="NEXT_PUBLIC_WEBAPP_URL" Target="NEXT_PUBLIC_WEBAPP_URL" Default="" Mode="" Description="https://formbricks.domain.com" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="NEXTAUTH_URL" Target="NEXTAUTH_URL" Default="" Mode="" Description="http://SERVER-IP:3006" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="MAIL_FROM" Target="MAIL_FROM" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_HOST" Target="SMTP_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_SECURE_ENABLED" Target="SMTP_SECURE_ENABLED" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="SMTP_USER" Target="SMTP_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="NEXT_PUBLIC_EMAIL_VERIFICATION_DISABLED" Target="NEXT_PUBLIC_EMAIL_VERIFICATION_DISABLED" Default="" Mode="" Description="Email Verification. If you enable Email Verification you have to setup SMTP-Settings, too." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="NEXT_PUBLIC_PASSWORD_RESET_DISABLED" Target="NEXT_PUBLIC_PASSWORD_RESET_DISABLED" Default="" Mode="" Description="Password Reset. If you enable Password Reset functionality you have to setup SMTP-Settings, too." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>
