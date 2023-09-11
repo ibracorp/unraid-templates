@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>activepieces</Name>
+  <Repository>activepieces/activepieces:0.8.0</Repository>
+  <Registry>https://hub.docker.com/r/activepieces/activepieces</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.com/invite/fA8hYBFkHd</Support>
+  <Project>https://www.activepieces.com/</Project>
+  <Overview>Activepieces is a no-code workflow builder, designed to be extensible through a strongly typed pieces framework written in Typescript.</Overview>
+  <Category>Productivity: Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/Uzf57nx.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1694470395</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8594</Config>
+  
+  <Config Name="AP_ENCRYPTION_KEY" Target="AP_ENCRYPTION_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="AP_JWT_SECRET" Target="AP_JWT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="AP_ENVIRONMENT" Target="AP_ENVIRONMENT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">prod</Config>
+  <Config Name="AP_FRONTEND_URL" Target="AP_FRONTEND_URL" Default="" Mode="" Description="https://activepieces.domain.com" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="AP_POSTGRES_DATABASE" Target="AP_POSTGRES_DATABASE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">activepieces</Config>
+  <Config Name="AP_POSTGRES_HOST" Target="AP_POSTGRES_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
+  <Config Name="AP_POSTGRES_PORT" Target="AP_POSTGRES_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">5432</Config>
+  <Config Name="AP_POSTGRES_USERNAME" Target="AP_POSTGRES_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
+  <Config Name="AP_POSTGRES_PASSWORD" Target="AP_POSTGRES_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="AP_REDIS_HOST" Target="AP_REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">redis</Config>
+  <Config Name="AP_REDIS_PORT" Target="AP_REDIS_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">6379</Config>
+  <Config Name="AP_TELEMETRY_ENABLED" Target="AP_TELEMETRY_ENABLED" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false">true</Config>
+  <Config Name="AP_TRIGGER_DEFAULT_POLL_INTERVAL" Target="AP_TRIGGER_DEFAULT_POLL_INTERVAL" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">5</Config>
+  <Config Name="AP_TEMPLATES_SOURCE_URL" Target="AP_TEMPLATES_SOURCE_URL" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">https://cloud.activepieces.com/api/v1/flow-templates</Config>
+  <Config Name="AP_SANDBOX_RUN_TIME_SECONDS" Target="AP_SANDBOX_RUN_TIME_SECONDS" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">600</Config>
+  <Config Name="AP_EXECUTION_MODE" Target="AP_EXECUTION_MODE" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">UNSANDBOXED</Config>
+  <Config Name="AP_ENGINE_EXECUTABLE_PATH" Target="AP_ENGINE_EXECUTABLE_PATH" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">dist/packages/engine/main.js</Config>
+  
+  
+</Container>
