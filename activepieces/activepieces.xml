@@ -40,6 +40,4 @@
   <Config Name="AP_SANDBOX_RUN_TIME_SECONDS" Target="AP_SANDBOX_RUN_TIME_SECONDS" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">600</Config>
   <Config Name="AP_EXECUTION_MODE" Target="AP_EXECUTION_MODE" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">UNSANDBOXED</Config>
   <Config Name="AP_ENGINE_EXECUTABLE_PATH" Target="AP_ENGINE_EXECUTABLE_PATH" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">dist/packages/engine/main.js</Config>
-  
-  
 </Container>
