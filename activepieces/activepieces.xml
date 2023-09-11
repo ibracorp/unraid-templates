@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>activepieces</Name>
-  <Repository>activepieces/activepieces:0.8.0</Repository>
+  <Repository>activepieces/activepieces:latest</Repository>
   <Registry>https://hub.docker.com/r/activepieces/activepieces</Registry>
   <Network>bridge</Network>
   <MyIP/>
