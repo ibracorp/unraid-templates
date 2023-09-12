@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>send</Name>
+  <Repository>registry.gitlab.com/timvisee/send:latest</Repository>
+  <Registry>gitlab.com/timvisee/send:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/timvisee/send-docker-compose/issues</Support>
+  <Project>https://send.vis.ee/</Project>
+  <Overview>A file sharing experiment which allows you to send encrypted files to other users.</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:1443]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/adminer.xml</TemplateURL>
+  <Icon>https://gitlab.com/timvisee/send/-/raw/master/assets/icon-64x64.png?ref_type=heads</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1694526472</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="1443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1443</Config>
+  <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">redis</Config>
+  <Config Name="VIRTUAL_HOST" Target="VIRTUAL_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">send.domain.com</Config>
+  <Config Name="BASE_URL" Target="BASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://send.domain.com</Config>
+  <Config Name="Uploads" Target="/uploads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/send</Config>
+</Container>
