@@ -22,6 +22,6 @@
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8154</Config>
-  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/maintainerr</Config>
+  <Config Name="Data" Target="/opt/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/maintainerr</Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
 </Container>
