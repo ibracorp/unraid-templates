@@ -13,7 +13,7 @@
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/harness/gitness/blob/master/web/src/images/gitLogo.png?raw=true</Icon>
+  <Icon>https://github.com/harness/gitness/blob/main/web/src/images/gitLogo.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
