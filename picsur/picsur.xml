@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>picsur</Name>
+  <Repository>ghcr.io/caramelfur/picsur:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/CaramelFur/Picsur/issues</Support>
+  <Project>https://github.com/CaramelFur/Picsur</Project>
+  <Overview>An easy to use, selfhostable image sharing service like Imgur with built in converting</Overview>
+  <Category>Productivity: Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/CaramelFur/Picsur/blob/master/branding/logo/picsur-128.png?raw=true</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1696427228</DateInstalled>
+  <DonateText>Help support our work by buying us a beer</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8087</Config>
+  <Config Name="PICSUR_DB_HOST" Target="PICSUR_DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgres</Config>
+  <Config Name="PICSUR_DB_PORT" Target="PICSUR_DB_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
+  <Config Name="PICSUR_DB_USERNAME" Target="PICSUR_DB_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgres</Config>
+  <Config Name="PICSUR_DB_PASSWORD" Target="PICSUR_DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="PICSUR_DB_DATABASE" Target="PICSUR_DB_DATABASE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">picsur</Config>
+  <Config Name="PICSUR_ADMIN_PASSWORD" Target="PICSUR_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
