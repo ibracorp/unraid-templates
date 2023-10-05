@@ -49,11 +49,6 @@ To start the initial setup, navigate to https://your-server-ip:9000/if/flow/init
   <Data>
     <Volume>
       <HostDir/>
-      <ContainerDir>/geoip</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir/>
       <ContainerDir>/templates</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -106,21 +101,6 @@ To start the initial setup, navigate to https://your-server-ip:9000/if/flow/init
     </Variable>
     <Variable>
       <Value/>
-      <Name>GEOIPUPDATE_ACCOUNT_ID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>GEOIPUPDATE_LICENSE_KEY</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>/geoip/GeoLite2-City.mmdb</Value>
-      <Name>AUTHENTIK_AUTHENTIK__GEOIP</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
       <Name>AUTHENTIK_SECRET_KEY</Name>
       <Mode/>
     </Variable>
@@ -134,10 +114,6 @@ To start the initial setup, navigate to https://your-server-ip:9000/if/flow/init
   <Config Name="PostgreSQL DB Name" Target="AUTHENTIK_POSTGRESQL__NAME" Default="authentik" Mode="" Description="Container Variable: AUTHENTIK_POSTGRESQL__NAME" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="PostgreSQL DB Password" Target="AUTHENTIK_POSTGRESQL__PASSWORD" Default="" Mode="" Description="Container Variable: AUTHENTIK_POSTGRESQL__PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Error Reporting" Target="AUTHENTIK_ERROR_REPORTING__ENABLED" Default="" Mode="" Description="Container Variable: AUTHENTIK_ERROR_REPORTING__ENABLED: true or false" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="MaxMind Account ID" Target="GEOIPUPDATE_ACCOUNT_ID" Default="" Mode="" Description="https://www.maxmind.com/en/geolite2/signup" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="MaxMind License Key" Target="GEOIPUPDATE_LICENSE_KEY" Default="" Mode="" Description="Your MaxMind license key" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="GeoIP " Target="AUTHENTIK_AUTHENTIK__GEOIP" Default="" Mode="" Description="Container Variable: AUTHENTIK_AUTHENTIK__GEOIP" Type="Variable" Display="always" Required="false" Mask="false">/geoip/GeoLite2-City.mmdb</Config>
-  <Config Name="GeoIP Path" Target="/geoip" Default="" Mode="rw" Description="Container Path: /geoip" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="APP Key" Target="AUTHENTIK_SECRET_KEY" Default="" Mode="" Description="https://passwordsgenerator.net/" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Redis Password" Target="AUTHENTIK_REDIS__PASSWORD" Default="" Mode="" Description="Container Variable: AUTHENTIK_REDIS__PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Custom Templates" Target="/templates" Default="" Mode="rw" Description="Container Path: /templates" Type="Path" Display="always-hide" Required="false" Mask="false"/>
