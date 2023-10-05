@@ -3,7 +3,7 @@
   <Name>jellyseerr</Name>
   <Repository>fallenbagel/jellyseerr:latest</Repository>
   <Registry>https://hub.docker.com/r/fallenbagel/jellyseerr/</Registry>
-  <Network>ibraproxy</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
