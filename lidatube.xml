@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>lidatube</Name>
+  <Repository>thewicklowwolf/lidatube:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/TheWicklowWolf/LidaTube/issues</Support>
+  <Project>https://github.com/TheWicklowWolf/LidaTube</Project>
+  <Overview>Web GUI for finding and downloading missing Lidarr albums</Overview>
+  <Category>Tools: MediaApp:Music</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://user-images.githubusercontent.com/111055425/272870500-69396f7a-af18-42a9-b1ea-0585b488bdec.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699677688</DateInstalled>
+  <DonateText>If you like our work please consider Donating.</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="5000" Default="5000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="Downloads" Target="/lidatube/downloads" Default="" Mode="rw,shared" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data/downloads</Config>
+  <Config Name="Localtime" Target="/etc/localtime" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/localtime</Config>
+  <Config Name="Lidarr" Target="lidarr_address" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://SERVER-IP:8686</Config>
+  <Config Name="Lidarr API" Target="lidarr_api_key" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Thread Limit" Target="thread_limit" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+</Container>
