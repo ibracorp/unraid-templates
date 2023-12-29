@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>exercise-dairy</Name>
+  <Repository>aceberg/exercisediary</Repository>
+  <Registry>https://hub.docker.com/r/aceberg/exercisediary</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/aceberg/ExerciseDiary</Project>
+  <Overview>Workout diary with GitHub-style year visualization</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:8851]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/aceberg/ExerciseDiary/main/assets/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1703871079</DateInstalled>
+  <DonateText>If you like our work please consider Donating.</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="8851" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8851</Config>
+  <Config Name="Data" Target="/data/ExerciseDiary" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/exercisediary</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">America/Chicago</Config>
+  <Config Name="HOST" Target="HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0</Config>
+  <Config Name="THEME" Target="THEME" Default="" Mode="" Description="Any theme name from https://bootswatch.com in lowcase or additional (emerald, grass, sand)" Type="Variable" Display="always" Required="false" Mask="false">grass</Config>
+  <Config Name="COLOR" Target="COLOR" Default="" Mode="" Description="Background color: light or dark" Type="Variable" Display="always" Required="false" Mask="false">dark</Config>
+</Container>
