@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>evershop</Name>
+  <Repository>evershop/evershop:latest</Repository>
+  <Registry>https://hub.docker.com/r/evershop/evershop</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/evershopcommerce/evershop/issues</Support>
+  <Project>https://evershop.io/</Project>
+  <Overview>EverShop is a GraphQL Based and React ecommerce platform with essential commerce features. Built with React, modular and fully customizable.&#xD;
+&#xD;
+To create admin user:&#xD;
+&#xD;
+console into the app and run &#xD;
+&#xD;
+npm run user:create -- --email "your email" --password "your password" --name "your name"</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/evershopcommerce/evershop/main/.github/images/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1705028670</DateInstalled>
+ <DonateText>If you like our work please consider Donating.</DonateText>
+  <DonateLink>https://paypal.me/ibracorp</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3040</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgresql</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">evershop</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgres</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgres</Config>
+</Container>
