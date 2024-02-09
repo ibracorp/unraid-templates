@@ -11,7 +11,7 @@
   <Project>https://github.com/jorenn92/Maintainerr/tree/main</Project>
   <Overview>Maintainerr makes managing your media easy. Create custom rules with parameters across different services, show matching media on the Plex home screen for a given amount of days and handle the deletion.</Overview>
   <Category>Tools: Other:</Category>
-  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <WebUI>http://[IP]:[PORT:6246]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/jorenn92/Maintainerr/blob/main/ui/public/logo.png?raw=true</Icon>
   <ExtraParams/>
@@ -21,7 +21,7 @@
   <DonateText>Help support our work by buying us a beer</DonateText>
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Requires/>
-  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8154</Config>
+  <Config Name="WebUI" Target="6246" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8154</Config>
   <Config Name="Data" Target="/opt/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/maintainerr</Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
 </Container>
