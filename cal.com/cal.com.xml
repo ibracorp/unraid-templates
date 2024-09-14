@@ -7,8 +7,8 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
+  <Support>https://github.com/calcom/docker/issues<Support/>
+  <Project>https://cal.com/<Project/>
   <Overview>The open source Calendly alternative. You are in charge of your own data, workflow and appearance.&#xD;
 </Overview>
   <Category>Productivity: Tools:</Category>
@@ -25,10 +25,12 @@
   <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Config" Target="/cal" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cal.com/</Config>
   <Config Name="NEXT_PUBLIC_WEBAPP_URL" Target="NEXT_PUBLIC_WEBAPP_URL" Default="" Mode="" Description="http://serverIP:PORT" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="NEXT_PUBLIC_API_V2_URL" Target="NEXT_PUBLIC_API_V2_URL" Default="http://localhost:5555/api/v2" Mode="" Description="http://localhost:5555/api/v2" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="CALCOM_TELEMETRY_DISABLED" Target="CALCOM_TELEMETRY_DISABLED" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
   <Config Name="NEXTAUTH_SECRET" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="CALENDSO_ENCRYPTION_KEY" Target="CALENDSO_ENCRYPTION_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DATABASE_HOST}/${POSTGRES_DB}" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATABASE_DIRECT_URL" Target="DATABASE_DIRECT_URL" Default="" Mode="" Description="postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DATABASE_HOST}/${POSTGRES_DB}" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="NEXTAUTH_URL" Target="NEXTAUTH_URL" Default="" Mode="" Description="http://serverIP:PORT/api/auth" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="EMAIL_FROM" Target="EMAIL_FROM" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="EMAIL_SERVER_HOST" Target="EMAIL_SERVER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
