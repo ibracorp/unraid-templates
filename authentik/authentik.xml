@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>authentik</Name>
-  <Repository>beryju/authentik:latest</Repository>
-  <Registry>https://hub.docker.com/r/beryju/authentik/</Registry>
+  <Repository>ghcr.io/goauthentik/server:2025.8.1</Repository>
+  <Registry>https://github.com/goauthentik/authentik/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -120,3 +120,4 @@ To start the initial setup, navigate to https://your-server-ip:9000/if/flow/init
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="" Mode="ro" Description="Container Path: /var/run/docker.sock" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="media" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
+
