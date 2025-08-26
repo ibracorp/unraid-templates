@@ -10,18 +10,7 @@ A comprehensive collection of Docker container templates for unRAID, maintained 
 
 ### Adding Templates to unRAID
 
-1. **Open unRAID Web UI** and navigate to the **Apps** tab
-2. Click on **App Templates** 
-3. Click on **Template Repositories**
-4. Add this repository URL:
-   ```
-   https://github.com/ibracorp/unraid-templates
-   ```
-5. Click **Save** and the templates will be available in your Apps section
-
-### Alternative Installation Method
-
-You can also manually download individual `.xml` template files and place them in:
+Manually download individual `.xml` template files and place them in:
 ```
 /boot/config/plugins/dockerMan/templates-user/
 ```
