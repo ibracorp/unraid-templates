@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>authentik-worker</Name>
-  <Repository>beryju/authentik:latest</Repository>
-  <Registry>https://hub.docker.com/r/beryju/authentik/</Registry>
+  <Repository>ghcr.io/goauthentik/server:2025.8.1</Repository>
+  <Registry>https://github.com/goauthentik/authentik/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -113,3 +113,4 @@ This is the worker. You will need the Authentik app which is the server. </Descr
   <Config Name="Custom Templates" Target="/templates" Default="" Mode="rw" Description="Container Path: /templates" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Redis Password" Target="AUTHENTIK_REDIS__PASSWORD" Default="" Mode="" Description="Container Variable: AUTHENTIK_REDIS__PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
+
