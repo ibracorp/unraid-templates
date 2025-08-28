@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ownCloud-OCIS</Name>
+  <Repository>owncloud/ocis:latest</Repository>
+  <Registry>https://hub.docker.com/r/owncloud/ocis</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>ownCloud Infinite Scale (OCIS) is the next-generation file sync and share platform. A complete rewrite of ownCloud built with Go, it's faster, more secure, and designed for modern cloud infrastructure.
+
+**Key Features:**
+- Modern, microservices-based architecture
+- Built-in office document collaboration
+- API-first design with extensive extensibility
+- Advanced security and compliance features
+- Kubernetes-native and cloud-ready
+
+**Default Credentials:**
+- Username: admin
+- Password: admin (change immediately!)
+
+**Security Notes:**
+- Default JWT secrets are provided for initial setup
+- **IMPORTANT**: Change all security tokens for production use
+- Generate new secrets using: `openssl rand -base64 32`
+
+**Important Notes:**
+- This is the basic OCIS setup. For production use with SSL/TLS, consider the full deployment with Traefik reverse proxy
+- OCIS_INSECURE is enabled for local network access
+- For external access, you'll need proper domain configuration and SSL certificates
+- If OCIS_URL is not set to your server's IP or domain, you may face issues logging in or starting up.
+  </Overview>
+  <Category>Cloud: Productivity:</Category>
+  <WebUI>https://[IP]:[PORT:9200]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/owncloud/core/master/core/img/logo/logo.svg</Icon>
+  <ExtraParams>--restart=unless-stopped --entrypoint=/bin/sh --user=99:100</ExtraParams>
+  <PostArgs>-c "ocis init || true; exec ocis server"</PostArgs>
+  <CPUset/>
+  <DateInstalled>1754686938</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI" Target="9200" Default="" Mode="tcp" Description="Web interface port for ownCloud OCIS" Type="Port" Display="always" Required="true" Mask="false">9200</Config>
+  <Config Name="Data Director" Target="/var/lib/ocis" Default="" Mode="rw" Description="Directory where OCIS stores user data, metadata, and internal files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/owncloud-ocis/data</Config>
+  <Config Name="Config Directory" Target="/etc/ocis" Default="" Mode="rw" Description="Directory where OCIS stores configuration files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/owncloud-ocis/config</Config>
+  <Config Name="OCIS Domain" Target="OCIS_DOMAIN" Default="" Mode="" Description="Primary domain for OCIS (e.g., ocis.yourdomain.com). Leave empty for IP-based access." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Admin Password" Target="IDM_ADMIN_PASSWORD" Default="admin" Mode="" Description="Custom admin password. Leave empty to use default 'admin' password." Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="Insecure Mode" Target="OCIS_INSECURE" Default="true" Mode="" Description="Enable insecure mode for local network access without SSL. Set to 'false' for production with proper SSL setup." Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="Proxy HTTP Address" Target="PROXY_HTTP_ADDR" Default="0.0.0.0:9200" Mode="" Description="HTTP address for the proxy service to bind to. Use 0.0.0.0:9200 for all interfaces or specify IP:port." Type="Variable" Display="always" Required="true" Mask="false">0.0.0.0:9200</Config>
+  <Config Name="OCIS URL" Target="OCIS_URL" Default="https://localhost:9200" Mode="" Description="Full URL for OCIS access. Use https://your-server-ip:9200 or your domain. Keep https even with insecure mode." Type="Variable" Display="always" Required="true" Mask="false">https://localhost:9200</Config>
+  <Config Name="JWT Secret" Target="OCIS_JWT_SECRET" Default="Pive-Fumkiu4-Doadegew-Osu" Mode="" Description="JWT secret for token signing. Leave empty to auto-generate a random secret. For production, use a secure random string." Type="Variable" Display="advanced" Required="false" Mask="false">Pive-Fumkiu4-Doadegew-Osu</Config>
+  <Config Name="Machine Auth API Key" Target="OCIS_MACHINE_AUTH_API_KEY" Default="" Mode="" Description="Machine auth API key for internal service communication. Leave empty to auto-generate." Type="Variable" Display="advanced" Required="false" Mask="false">change-me-please</Config>
+  <Config Name="Web UI Theme" Target="WEB_UI_THEME_SERVER" Default="" Mode="" Description="Custom theme server URL. Leave empty for default theme." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Demo Users" Target="IDM_CREATE_DEMO_USERS" Default="false" Mode="" Description="Create demo users (einstein, marie, richard, etc.) for testing. Set to 'true' to enable." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="SMTP Host" Target="NOTIFICATIONS_SMTP_HOST" Default="" Mode="" Description="SMTP server hostname for email notifications (optional)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SMTP Port" Target="NOTIFICATIONS_SMTP_PORT" Default="587" Mode="" Description="MTP server port (usually 587 for TLS or 465 for SSL)" Type="Variable" Display="advanced" Required="false" Mask="false">587</Config>
+  <Config Name="SMTP Username" Target="NOTIFICATIONS_SMTP_USERNAME" Default="" Mode="" Description="SMTP authentication username (optional)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SMTP Password" Target="NOTIFICATIONS_SMTP_PASSWORD" Default="" Mode="" Description="SMTP authentication password (optional)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SMTP Security" Target="NOTIFICATIONS_SMTP_SECURITY" Default="starttls" Mode="" Description="SMTP security method (none, starttls, ssl)" Type="Variable" Display="advanced" Required="false" Mask="false">starttls</Config>
+  <Config Name="Max File Size" Target="GATEWAY_UPLOAD_MAX_SIZE" Default="1073741824" Mode="" Description="Maximum file upload size in bytes (default: 1GB)" Type="Variable" Display="advanced" Required="false" Mask="false">1073741824</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UserID for file permissions (99 = nobody user in Unraid)" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GroupID for file permissions (100 = users group in Unraid)" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="Log Level" Target="OCIS_LOG_LEVEL" Default="info" Mode="" Description="Log level for OCIS (debug, info, warn, error)" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <Config Name="SMTP Sender" Target="NOTIFICATIONS_SMTP_SENDER" Default="" Mode="" Description="Email address for sending notifications (e.g., 'ocis-noreply@yourdomain.com)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Transfer Secret" Target="STORAGE_TRANSFER_SECRET" Default="" Mode="" Description="Transfer secret for secure file operations. Leave empty to auto-generate." Type="Variable" Display="advanced" Required="false" Mask="false">replace-me-with-a-transfer-secret</Config>
+  <TailscaleStateDir/>
+</Container>
