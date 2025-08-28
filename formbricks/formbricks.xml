@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Container version="3">
   <Name>formbricks</Name>
   <Repository>formbricks/formbricks</Repository>
   <Registry>https://hub.docker.com/r/formbricks/formbricks/</Registry>
@@ -13,7 +13,7 @@
 &#xD;
 Use micro-surveys to target the right users at the right time without making surveys annoying.</Overview>
   <Category>Productivity: Tools:</Category>
-  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <WebUI>http://[IP]:[PORT:3006]</WebUI>
   <TemplateURL/>
   <Icon>https://i.imgur.com/4XxnmqB.png</Icon>
   <ExtraParams/>
@@ -24,9 +24,11 @@ Use micro-surveys to target the right users at the right time without making sur
   <DonateLink>https://paypal.me/ibracorp</DonateLink>
   <Requires/>
   <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3006</Config>
-  <Config Name="Container Variable 3" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="You can use: `openssl rand -base64 32` to generate one" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="NEXTAUTH_SECRET" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="You can use: `openssl rand -hex 32` to generate one" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ENCRYPTION_KEY" Target="ENCRYPTION_KEY" Default="" Mode="" Description="You can use: `openssl rand -hex 32` to generate one" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="CRON_SECRET" Target="CRON_SECRET" Default="" Mode="" Description="You can use: `openssl rand -hex 32` to generate one" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="postgresql://USER:PASSWORD@HOSTNAME:PORT/DB_NAME" Type="Variable" Display="always" Required="true" Mask="false">postgresql://postgres:postgres@postgres:5432/formbrick</Config>
-  <Config Name="NEXT_PUBLIC_WEBAPP_URL" Target="NEXT_PUBLIC_WEBAPP_URL" Default="" Mode="" Description="https://formbricks.domain.com" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="WEBAPP_URL" Target="WEBAPP_URL" Default="" Mode="" Description="https://formbricks.domain.com" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="NEXTAUTH_URL" Target="NEXTAUTH_URL" Default="" Mode="" Description="http://SERVER-IP:3006" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="MAIL_FROM" Target="MAIL_FROM" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="SMTP_HOST" Target="SMTP_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
@@ -34,6 +36,9 @@ Use micro-surveys to target the right users at the right time without making sur
   <Config Name="SMTP_SECURE_ENABLED" Target="SMTP_SECURE_ENABLED" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="SMTP_USER" Target="SMTP_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="NEXT_PUBLIC_EMAIL_VERIFICATION_DISABLED" Target="NEXT_PUBLIC_EMAIL_VERIFICATION_DISABLED" Default="" Mode="" Description="Email Verification. If you enable Email Verification you have to setup SMTP-Settings, too." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="NEXT_PUBLIC_PASSWORD_RESET_DISABLED" Target="NEXT_PUBLIC_PASSWORD_RESET_DISABLED" Default="" Mode="" Description="Password Reset. If you enable Password Reset functionality you have to setup SMTP-Settings, too." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="EMAIL_VERIFICATION_DISABLED" Target="EMAIL_VERIFICATION_DISABLED" Default="" Mode="" Description="Email Verification. Set it to 0 to enable Email Verification for new signups. If you enable Email Verification you have to setup SMTP-Settings, too." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="PASSWORD_RESET_DISABLED" Target="PASSWORD_RESET_DISABLED" Default="" Mode="" Description="Password Reset. Set it to 0 to enable Password Reset. If you enable Password Reset functionality you have to setup SMTP-Settings, too." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="EMAIL_AUTH_DISABLED" Target="EMAIL_AUTH_DISABLED" Default="0" Mode="" Description="Logins with email. Set it to 1 to disable logins with email (disable signup and login via email)." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="INVITE_DISABLED" Target="INVITE_DISABLED" Default="0" Mode="" Description="Disable invites. Set it to 1 to disable invites." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="AppData Path" Target="/uploads" Default="/mnt/user/appdata/formbricks" Mode="rw" Description="Container Path: /uploads" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/formbricks</Config>
 </Container>
