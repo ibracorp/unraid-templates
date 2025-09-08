@@ -109,3 +109,4 @@ templates/**/*.sketch
 # Validation Cache
 .validation-cache
 .template-cache
+CLAUDE.md
