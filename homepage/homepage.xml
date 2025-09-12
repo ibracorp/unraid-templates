@@ -25,7 +25,6 @@
   <Requires/>
   <Config Name="/app/config" Target="/app/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homepage</Config>
   <Config Name="docker socket" Target="/var/run/docker.sock" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
-  <Config Name="HOMEPAGE_ALLOWED_HOSTS" Target="HOMEPAGE_ALLOWED_HOSTS" Default="192.168.1.1:3000" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.1:3000</Config>
   <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="HOMEPAGE_ALLOWED_HOSTS" Target="HOMEPAGE_ALLOWED_HOSTS" Default="" Mode="" Description="The value is a comma-separated (no spaces) list of allowed hosts (sometimes with the port) that can host your homepage install. See gethomepage.dev/installation/#homepage_allowed_hosts" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 </Container>
