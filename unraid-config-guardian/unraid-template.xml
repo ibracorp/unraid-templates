@@ -44,6 +44,6 @@ Access the web interface at http://your-unraid-ip:7842</Overview>
   <Config Name="Backup Schedule" Target="SCHEDULE" Default="0 2 * * 0" Mode="" Description="Cron schedule for automated backups (Sunday 2 AM)" Type="Variable" Display="always" Required="false" Mask="false">0 2 * * 0</Config>
   <Config Name="Mask Passwords" Target="MASK_PASSWORDS" Default="true" Mode="" Description="Hide sensitive environment variables" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Include System Info" Target="INCLUDE_SYSTEM_INFO" Default="true" Mode="" Description="Include system information in backup" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="DOCKER HOST" Target="DOCKER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">tcp://your-unraid-ip:2375</Config>
+  <Config Name="DOCKER HOST" Target="DOCKER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">tcp://dockersocket-ip:2375</Config>
   <TailscaleStateDir/>
 </Container>
