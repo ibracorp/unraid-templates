@@ -1,6 +1,6 @@
 # unRAID Templates Repository
 
-![IBRACORP Logo](https://raw.githubusercontent.com/ibracorp/unraid-templates/master/IBRACORP_Logo.png)
+![IBRACORP Logo](https://raw.githubusercontent.com/ibracorp/unraid-templates/master/V3Icon.png)
 
 **Central storage for unRAID Community Applications Templates**
 
