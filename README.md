@@ -1,6 +1,6 @@
 # unRAID Templates Repository
 
-![IBRACORP Logo](https://raw.githubusercontent.com/ibracorp/unraid-templates/master/IBRACORP_Logo.png)
+![IBRACORP Logo](https://raw.githubusercontent.com/ibracorp/unraid-templates/master/V3Icon.png)
 
 **Central storage for unRAID Community Applications Templates**
 
@@ -17,54 +17,11 @@ Manually download individual `.xml` template files and place them in:
 
 ## Available Applications
 
-Our template collection includes applications across multiple categories:
+Our template collection includes 54+ applications across multiple categories including Security & Authentication, Media & Entertainment, Productivity & Business, Development & DevOps, Gaming, and more.
 
-### Security & Authentication
-- **Authelia** - Authentication and authorization server with 2FA support
-- **Authentik** - Open-source Identity Provider with flexible authentication flows  
-- **CrowdSec** - Collaborative IPS for detecting and blocking malicious behavior
-- **Pomerium** - Identity-aware proxy for secure application access
-- **Casdoor** - Multi-tenant identity and access management solution
+📋 **[View Complete Template List by Category](docs/templates-by-category.md)**
 
-### Media & Entertainment
-- **Jellyseerr** - Request management for Jellyfin & Emby media servers
-- **PlexTraktSync** - Two-way sync between Plex and Trakt.tv
-- **Wrapperr** - Plex statistics dashboard (like Spotify Wrapped)
-- **ViewTube** - Self-hosted YouTube frontend
-- **Beatbump** - Privacy-focused music streaming interface
-- **Muer** - Modern music player with YouTube integration
-
-### Productivity & Business
-- **Ghost** - Professional publishing platform for blogs and newsletters
-- **Matomo** - Privacy-focused web analytics platform
-- **Kimai** - Professional time tracking application
-- **Super Productivity** - Advanced todo list and time tracking tool
-- **Formbricks** - In-product micro-survey platform
-- **Cal.com** - Open-source Calendly alternative
-
-### Development & DevOps
-- **Gitness** - Lightweight code hosting with continuous integration
-- **Traefik** - Modern reverse proxy and load balancer
-- **Docker Socket Proxy** - Security-enhanced Docker socket proxy
-- **Yacht** - Web interface for managing Docker containers
-- **Homepage** - Highly customizable application dashboard
-
-### Health & Personal
-- **Fasten** - Personal health record manager
-- **BabyBuddy** - Baby care tracking application
-- **Exercise Diary** - Workout tracking with GitHub-style visualization
-
-### Gaming & Game Servers
-- **Pterodactyl Panel** - Game server management panel
-- **Pterodactyl Daemon** - Node daemon for Pterodactyl panel
-
-### Documentation & Knowledge
-- **XWiki** - Extensible wiki platform with advanced features
-- **DocuSeal** - Digital document signing and processing platform
-
-### Communication & Social
-- **Databag** - Federated, privacy-focused chat application
-- **VoceChat** - Lightweight self-hosted chat server
+For a comprehensive overview of all available templates organized by category, including descriptions and directory paths, see our detailed documentation.
 
 ## 🔧 Template Structure
 

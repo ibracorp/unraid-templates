@@ -21,7 +21,7 @@ https://discord.gg/VWAG7rZ</Overview>
   <Category>Productivity: Security: Tools:Utilities Network:Proxy</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/traefik/traefik.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/icons/traefik.png</Icon>
+  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/traefik/traefik.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

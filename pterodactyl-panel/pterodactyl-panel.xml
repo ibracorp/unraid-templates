@@ -15,7 +15,7 @@ Find a guide on how to get this up and running at https://docs.ibracorp.io</Over
   <Category>GameServers: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/pterodactyl-panel.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/icons/pterodactyl-panel.png</Icon>
+  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/pterodactyl-panel/pterodactyl-panel.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
