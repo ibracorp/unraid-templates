@@ -7,8 +7,8 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/calcom/docker/issues<Support/>
-  <Project>https://cal.com/<Project/>
+  <Support>https://github.com/calcom/docker/issues</Support>
+  <Project>https://cal.com/</Project>
   <Overview>The open source Calendly alternative. You are in charge of your own data, workflow and appearance.&#xD;
 </Overview>
   <Category>Productivity: Tools:</Category>
