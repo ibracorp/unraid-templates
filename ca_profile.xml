@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maintainer>
-  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/V3Icon.png/Icon>
+  <Icon>https://raw.githubusercontent.com/ibracorp/unraid-templates/master/V3Icon.png</Icon>
   <Profile>
     We are IBRACORP. We create Docker templates, Guides and YouTube videos to get your homelab set up across a range of needs, from basic all the way to enterprise level. Join our Discord!
   </Profile>
