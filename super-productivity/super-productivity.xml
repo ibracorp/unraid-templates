@@ -9,9 +9,11 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/johannesjo/super-productivity/issues</Support>
   <Project>https://super-productivity.com/</Project>
-  <Overview>Organize your daily tasks in one place while making time tracking a lot less annoying. Super Productivity is a ToDo List / Time Tracker / Personal Jira Task Manager for Linux, MacOS and Windows aimed at reducing the time you spend with repetitive tasks and to provide you with a place to collect all the information you need to do your job.&#xD;
+  <Overview>Super Productivity is an open-source task planner and time tracker with daily planning, focus timers, and optional integrations.&#xD;
 &#xD;
-Apps available for Appstore and Playstore</Overview>
+This container serves the web app. Tasks are stored in each browser's local storage, not in the container's /config directory. Use the app's backup or optional sync features to preserve your tasks and access them from other devices. Export a backup before clearing browser data or changing the address you use to open the app.&#xD;
+&#xD;
+Desktop and mobile apps are also available at https://super-productivity.com/download/</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
